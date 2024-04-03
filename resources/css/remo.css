@@ -15,7 +15,8 @@ body {
 
 @media (min-width: 1600px) {
     .home-banner {
-        padding:1.5rem 0 6rem
+        padding:1.5rem 0 6rem;
+        padding-bottom: 2rem;
     }
 }
 

@@ -23,4 +23,6 @@ mix.js('resources/js/app.js', 'public/js').js('resources/js/jquery.js', 'public/
         //
     ]).postCss('resources/css/fontawesome-project/css/all.min.css', 'public/css', [
         //
+    ]).postCss('resources/css/custom.css', 'public/css', [
+        //
     ]);

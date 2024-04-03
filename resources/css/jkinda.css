@@ -193,17 +193,11 @@ body {
 }
 
 .hot-slide-item {
-    width: 33.33%;
     display: block;
     height: 550px;
-    margin-right: 32px;
 }
 
-@media screen and (max-width: 599px) {
-     .hot-slide-item {
-        width:90%
-    }
-}
+
 
 .hot-card {
     overflow: hidden;

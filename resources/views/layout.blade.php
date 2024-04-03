@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{ mix('css/jkinda.css') }}" />
         <link rel="stylesheet" href="{{ mix('css/remo.css') }}" />
         <link rel="stylesheet" href="{{ mix('css/all.min.css') }}" />
+        <link rel="stylesheet" href="{{ mix('css/custom.css') }}" />
 
         <title>Natours | Exciting tours for adventurous people</title>
     </head>

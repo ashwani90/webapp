@@ -1,0 +1,224 @@
+.philosophy__tag__image img{
+    transform: scale(1);
+    transition: all 3s ease-in;
+   }
+
+   .philosophy__tag__image {
+    overflow: hidden;
+   }
+
+.philosophy__tag__image img:hover{
+ transform: scale(1.2);
+ cursor: pointer;
+}
+
+
+.whats-hot-card-img {
+    background-image: url("/img/products/ai_newspaper.png");
+}
+
+.work-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.know-us-container {
+    width: 100%;
+    padding: 40px 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.know-us-container .image-container::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    content: "";
+    top: 0;
+    z-index: 1;
+    opacity: .8;
+}
+
+
+.know-us-container img{
+    height: inherit;
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.know-us-container .text-container-know {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    background-color: white;
+    height: 40%;
+    padding: 60px;
+
+}
+
+.text-container-know .small-head {
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    letter-spacing: .3em;
+    color: #747678;
+    margin-bottom: 4rem;
+    font-family: Basis-bold;
+    text-transform: uppercase!important;
+    font-weight: 500;
+}
+
+.text-container-know .large-head {
+    font-family: Houschka-medium;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #b03c00;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+.text-container-know .cta-container {
+    margin-top: 2rem;
+    line-height: 2.5rem;
+}
+
+.text-container-know .cta-container .cta {
+    font-family: Basis-medium;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: .03125rem;
+    color: #000;
+
+}
+
+.text-container-know .cta-container .cta-btn {
+    font-size: 20px;
+   margin-left: 10px;
+   background-color: black;
+   color: white;
+}
+
+.btn-circle .fa {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn-circle {
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+.text-container-know .text-content {
+    font-family: Basis-regular;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: .03125rem;
+    color: #5e6162;
+    opacity: .9;
+    margin-bottom: 0;
+}
+
+@keyframes hoverEffect {
+    0% {
+        transform: translateX(0px);
+
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.btn-circle .fa:hover {
+    animation: hoverEffect .75s;
+    cursor: pointer;
+}
+
+
+
+.newsletter {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: #1e2222;
+
+}
+
+.newsletter img {
+    width: 45%;
+}
+
+.text-container {
+    padding-top: 3rem;
+}
+
+.text-container .email-check:focus {
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+}
+
+.text-container-know {
+    padding-left: 30px;
+}
+
+.signup-form-section h2{
+    font-family: Houschka-medium;
+    color: #F1D3B2;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+.signup-right-content-para-p {
+    font-family: Basis-regular;
+    font-size: 1.5rem;
+    line-height: 2pc;
+    letter-spacing: .5px;
+    color: #b4b4b8;
+}
+
+.form-element .form-control {
+    font-family: Basis-regular;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #898a8d;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    height: 3.5rem;
+    color: #F1D3B2;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+}
+
+.form-control:focus {
+    outline: 0;
+}
+
+/* button style we also have and now implement this directly into the site */
+
+.d-none {
+    display: none;
+}
+
+.newsletter-image {
+    padding-right: 100px;
+}
+
