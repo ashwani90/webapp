@@ -1,7 +1,8 @@
 @extends('layout')
 @section('section')
 
-
+    @parent
+    @include('components.carousel')
 
             <section class="philosophy__small_section">
               <div class="philosophy__title">

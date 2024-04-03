@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="{{ mix('css/style.css') }}">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="{{ mix('css/jkinda.css') }}" />
+        <link rel="stylesheet" href="{{ mix('css/remo.css') }}" />
+        <link rel="stylesheet" href="{{ mix('css/all.min.css') }}" />
 
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
@@ -21,9 +25,9 @@
                 <span class="navigation__icon">&nbsp;</span>
             </label>
 
-            <div class="navigation__background">&nbsp;</div>
+            <!-- <div class="navigation__background">&nbsp;</div> -->
 
-            <nav class="navigation__nav">
+            <nav class="navigation__nav navigation__background">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="/" class="navigation__link">Home</a></li>
                     <li class="navigation__item"><a href="/products" class="navigation__link">Products</a></li>
@@ -35,55 +39,6 @@
             </nav>
         </div>
 
-        <header class="header" id="header-carousel">
-            <div class="header__logo-box">
-            <img src="{{ asset('img/jkinda_logo.png') }}"  alt="Logo" class="header__logo">
-            </div>
-            <div class="header__image active">
-              <img src="{{ asset('img/images/ai_generated.png') }}" height="100%" width="100%"/>
-            <div class="header__text-box">
-
-                <h1 class="heading-primary">
-                <span class="heading-primary--main">Transform<span class="heading-primary--main-sub"> with AI</span></span>
-                </h1>
-
-                <a href="#section-tours" class="btn btn--white btn--animated">Learn More</a>
-            </div>
-          </div>
-          <div class="header__image">
-            <img src="{{ asset('img/images/ai_generated.jpg') }}"  height="100%" width="100%"/>
-            <div class="header__text-box">
-              <h1 class="heading-primary">
-              <span class="heading-primary--main">Upgrade<span class="heading-primary--main-sub"> Software</span></span>
-              </h1>
-
-              <a href="#section-tours" class="btn btn--white btn--animated">Learn More</a>
-          </div>
-        </div>
-        <div class="header__image">
-          <img src="{{ asset('img/images/ai_generated1.jpg') }}"  height="100%" width="100%"/>
-          <div class="header__text-box">
-
-            <h1 class="heading-primary">
-            <span class="heading-primary--main">Optimize<span class="heading-primary--main-sub"> Performance</span></span>
-            </h1>
-
-            <a href="#section-tours" class="btn btn--white btn--animated">Learn More</a>
-        </div>
-      </div>
-      <div class="header__image">
-        <img src="{{ asset('img/images/ai_generated2.jpg') }}"  height="100%" width="100%"/>
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-          <span class="heading-primary--main">Custom <span class="heading-primary--main-sub">Development</span></span>
-          </h1>
-
-          <a href="#section-tours" class="btn btn--white btn--animated">Learn More</a>
-      </div>
-    </div>
-    <span class="progress-head"></span>
-
-        </header>
         @yield('section')
 
           <footer class="footer">
@@ -142,7 +97,10 @@
               </div>
             </div>
           </footer>
-          <script src="{{ mix('js/jquery.js') }}">
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{{ mix('js/carousel.js') }}">
           </script>
           <script>
             $( document ).ready(function() {

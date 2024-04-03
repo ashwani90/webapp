@@ -11,9 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').js('resources/js/jquery.js', 'public/js')
+mix.js('resources/js/app.js', 'public/js').js('resources/js/jquery.js', 'public/js').js('resources/js/carousel.js', 'public/js').js('resources/js/swiper.js', 'public/js')
     .postCss('resources/css/style.css', 'public/css', [
         //
-    ]).postCss('resources/css/app.css', 'public/css', [
+    ]).postCss('resources/css/jkinda.css', 'public/css', [
+        //
+    ]).postCss('resources/css/remo.css', 'public/css', [
+        //
+    ])
+    .postCss('resources/css/swiper.css', 'public/css', [
+        //
+    ]).postCss('resources/css/fontawesome-project/css/all.min.css', 'public/css', [
         //
     ]);
