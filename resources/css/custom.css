@@ -232,3 +232,86 @@
 .newsletter-image {
     padding-right: 100px;
 }
+
+/* header component other pages */
+
+.head-section {
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.head-section img {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    animation: zoom-out 2s ease-in .5s;
+}
+
+
+
+  @keyframes zoom-out {
+    0% {
+      transform: scale(1.2, 1.2); }
+
+    100% {
+      transform: scale(1, 1); } }
+
+.head-section .overlay {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    content: "";
+    top: 0;
+    z-index: 1;
+    opacity: .8;
+    background: linear-gradient(90deg, #000, transparent);
+}
+
+.image-content {
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    color: white;
+    z-index: 10;
+}
+
+.image-content span {
+    display: block;
+}
+
+.image-content .title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.image-content .divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 0.1rem;
+    width: 80vw;
+    background-color: white;
+}
+
+.image-content .primary-head {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.image-content .secondary-head {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}

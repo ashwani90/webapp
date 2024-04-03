@@ -1,6 +1,6 @@
 <div class="newsletter">
 
-        <img class="newsletter-image" src="./img/nat-6.jpg" alt="nature images"/>
+        <img class="newsletter-image" src="./img/images/ai_product4.jpg" alt="nature images"/>
 
         <div class="text-container">
             <form name="email-signup" class="enable-analytics" data-form-name="stay-in-the-know.newsletter-subscription-form" data-form-type="Subscription Form">

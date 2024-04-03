@@ -1,6 +1,6 @@
 @extends('layout')
 @section('section')
-
+@include('components.header-image')
 <section class="container">
             <div class="product">
                 <div class="product__item">
