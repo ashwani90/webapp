@@ -52,3 +52,88 @@
             </div>
           </div>
           </section>
+
+
+          <div class="product__new ">
+
+<div class="row">
+    <div class="col-md-6 product__new__text">
+        <h1>Chatbots: Powering Business Conversations Forward</h1>
+        <span>Introducing the catalyst for dynamic business communication: Chatbots. With their unparalleled ability to engage customers, streamline operations, and drive growth, Chatbots are revolutionizing the way businesses interact. Our cutting-edge solutions harness the power of Chatbots to propel conversations forward, empowering enterprises to connect effortlessly with their audience. Whether it's handling customer inquiries, automating tasks, or providing personalized assistance, our Chatbots deliver unmatched efficiency and effectiveness. Embrace the future of business communication and unlock new possibilities with Chatbots as your strategic ally. Elevate your brand, enhance customer satisfaction, and drive success with Chatbots leading the way. </span>
+        <button>Discover</button>
+    </div>
+    <div class="col-md-6 product__new__img">
+        <div class="product__new__img__container">
+        <img src="./img/ai_for/chatbot-3.webp" />
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+            <div class="row ">
+              <div class="col-md-6 column">
+                <div class="service__item">
+                <div class="service__item__text">
+                  <span class="service__item__icon"><i class="fa-solid fa-laptop"></i></span>
+                  <span class="service__item__text__title">Devops</span>
+                  <span class="service__item__text__descr">Devops service is very important for us and we want to do it as son as possible</span>
+                </div>
+                <button class="service__item__expand"><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+              </div>
+              <div class="col-md-6 column">
+                <div class="service__item">
+                  <div class="service__item__text">
+                    <span class="service__item__icon"><i class="fa-solid fa-mobile"></i></span>
+                    <span class="service__item__text__title">Devops</span>
+                    <span class="service__item__text__descr">Devops service is very important for us and we want to do it as son as possible</span>
+                  </div>
+                  <button class="service__item__expand"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+              </div>
+              <div class="col-md-6 column">
+                <div class="service__item">
+                <div class="service__item__text">
+                  <span class="service__item__icon"><i class="fa-solid fa-laptop"></i></span>
+                  <span class="service__item__text__title">Devops</span>
+                  <span class="service__item__text__descr">Devops service is very important for us and we want to do it as son as possible</span>
+                </div>
+                <button class="service__item__expand"><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+              </div>
+              <div class="col-md-6 column">
+                <div class="service__item">
+                <div class="service__item__text">
+                  <span class="service__item__icon"><i class="fa-solid fa-mobile"></i></span>
+                  <span class="service__item__text__title">Devops</span>
+                  <span class="service__item__text__descr">Devops service is very important for us and we want to do it as son as possible</span>
+                </div>
+                <button class="service__item__expand"><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+              </div>
+              <div class="col-md-6 column">
+                <div class="service__item">
+                <div class="service__item__text">
+                  <span class="service__item__icon"><i class="fa-solid fa-laptop"></i></span>
+                  <span class="service__item__text__title">Devops</span>
+                  <span class="service__item__text__descr">Devops service is very important for us and we want to do it as son as possible</span>
+                </div>
+                <button class="service__item__expand"><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+              </div>
+              <div class="col-md-6 column">
+                <div class="service__item">
+                <div class="service__item__text">
+                  <span class="service__item__icon"><i class="fa-solid fa-mobile"></i></span>
+                  <span class="service__item__text__title">Devops</span>
+                  <span class="service__item__text__descr">Devops service is very important for us and we want to do it as son as possible</span>
+                </div>
+                <button class="service__item__expand"><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+              </div>
+            </div>
+
+          </div>
