@@ -18,5 +18,5 @@ Route::get('/', [ MainController::class, 'index' ])->name("home");
 Route::get('/philosophy', [ MainController::class, 'philosophy' ])->name("philosophy");
 Route::get('/product', [ MainController::class, 'product' ])->name("product");
 Route::get('/products', [ MainController::class, 'products' ])->name("products");
-Route::get('/service', [ MainController::class, 'service' ])->name("service");
+Route::get('/service/{slug}', [ MainController::class, 'service' ])->name("service");
 Route::get('/services', [ MainController::class, 'services' ])->name("services");

@@ -1,14 +1,14 @@
 <div class="newsletter">
 
-        <img class="newsletter-image" src="./img/images/ai_product4.jpg" alt="nature images"/>
+        <img class="newsletter-image" src="{{ $data['newsletter_image'] ?? './img/images/ai_product4.jpg' }}" alt="nature images"/>
 
         <div class="text-container">
             <form name="email-signup" class="enable-analytics" data-form-name="stay-in-the-know.newsletter-subscription-form" data-form-type="Subscription Form">
                 <div class="signup-right-content-inner-section">
                     <div class="signup-form-section">
-                        <h2 class="signup-right-content-heading-h2 mb-4">Stay in the know</h2>
+                        <h2 class="signup-right-content-heading-h2 mb-4">{{ $data['newsletter_head'] ?? 'Stay in the know' }}</h2>
 
-                        <p class="signup-right-content-para-p">Register for our email newsletter to get the freshest takes, straight to your inbox. </p>
+                        <p class="signup-right-content-para-p">{{ $data['newsletter_desc'] ?? 'Register for our email newsletter to get the freshest takes, straight to your inbox.' }} </p>
                         <div class="row loader-outer">
                             <div class="col-12 col-xl-8">
                                 <div class="form-element form-element-error">

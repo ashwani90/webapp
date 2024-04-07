@@ -137,3 +137,68 @@
             </div>
 
           </div>
+
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                <div class="service__work__item">
+                    <h1>OCR: Text Capture</h1>
+                    <span class="service__work__item_line"></span>
+                    <span>Cras in maximus leo. Pellentesque libero justo, porttitor nec commodo eu, faucibus at tellus. Nunc sed lobortis arcu. Nam sed sapien et ipsum ornare finibus nec ut lectus. Mauris a elit a enim lacinia venenatis vitae consequat neque. Ut quis consequat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__work__item">
+                    <h1>Apps Work</h1>
+                    <span class="service__work__item_line"></span>
+                    <span>Cras in maximus leo. Pellentesque libero justo, porttitor nec commodo eu, faucibus at tellus. Nunc sed lobortis arcu. Nam sed sapien et ipsum ornare finibus nec ut lectus. Mauris a elit a enim lacinia venenatis vitae consequat neque. Ut quis consequat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__work__item">
+                    <h1>Apps Work</h1>
+                    <span class="service__work__item_line"></span>
+                    <span>Cras in maximus leo. Pellentesque libero justo, porttitor nec commodo eu, faucibus at tellus. Nunc sed lobortis arcu. Nam sed sapien et ipsum ornare finibus nec ut lectus. Mauris a elit a enim lacinia venenatis vitae consequat neque. Ut quis consequat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="service__story">
+            <h1>Our Customer Stories</h1>
+            <div class="service__story__items">
+                <div class="service__story__items-item">
+                    <div class="service__story__items-item-text">
+                        <h2>Our Applications</h2>
+                        <span>Etiam elementum dolor vel nunc sagittis condimentum. Nunc a aliquam orci. Nunc suscipit cursus odio sit amet malesuada. Sed sed posuere dolor, pharetra placerat leo. Vestibulum ut nisi velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspe</span>
+                        <button>See More</button>
+                    </div>
+                    <img src="./img/hero.jpg" />
+                </div>
+            </div>
+         </div>
+         <div class="service__clients">
+            <h1>Client Work</h1>
+            <div class="service__clients__items row">
+                <div class="service__clients__items__item col-md-3">
+                    <img src="./img/logo-green-1x.png"/>
+                    <h3>Company Name</h3>
+                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                </div>
+                <div class="service__clients__items__item col-md-3">
+                    <img src="./img/logo-green-1x.png"/>
+                    <h3>Company Name</h3>
+                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                </div>
+                <div class="service__clients__items__item col-md-3">
+                    <img src="./img/logo-green-1x.png"/>
+                    <h3>Company Name</h3>
+                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                </div>
+                <div class="service__clients__items__item col-md-3">
+                    <img src="./img/logo-green-1x.png"/>
+                    <h3>Company Name</h3>
+                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                </div>
+            </div>
+         </div>

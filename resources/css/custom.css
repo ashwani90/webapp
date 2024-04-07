@@ -248,8 +248,16 @@
     overflow: hidden;
     max-height: 100%;
     animation: zoom-out 2s ease-in .5s;
+    height: 100%;
+    width: 100%;
 }
 
+.head-section video {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+}
 
 
   @keyframes zoom-out {
@@ -444,4 +452,52 @@
 
 .whats_container {
     padding: 10px;
+}
+
+.service-text-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+}
+
+.service-text-container h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #000;
+    font-family: Houschka-medium;
+    margin-bottom: 3rem;
+}
+
+.service-text-container p {
+    font-size: 1.35rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+    color: #000;
+    font-family: Basis-regular;
+}
+
+.service-image-container img {
+
+    height: 400px;
+}
+
+.service-intro-container {
+    margin-bottom: 20px;
+}
+
+.service-intro-row {
+    margin-bottom: 40px;
+}
+
+.whatsNew_card-service h4 {
+    color: orangered;
+}
+
+.whatsNew_card-service p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: grey;
+    letter-spacing: 1px;
 }
