@@ -38,10 +38,13 @@ class MainController extends Controller
         $head_image_title = "Get in Touch / Contact US";
         $head_large = "Connect Now";
         $subhead_image = "Your Guide to Finding Solutions: Let Us Connect You with the Right Experts";
-        $image2 = "./img/images/ai_product2.jpg";
+        $image2 = "./img/images/contact.jpg";
         $service_intro_head = "Let's Connect! Reach Out and Let's Start a Conversation Today";
         $service_intro_desc = "At Jkinda, we specialize in delivering top-notch services such as custom AI development and software development tailored to your unique business needs. Whether you're looking to implement cutting-edge AI solutions or create bespoke software applications, we're here to help. With a commitment to personalized yet professional service, we're just one call away. Our dedicated team is ready to provide expert guidance and support to help your business grow and expand. Don't hesitate to reach out – let's work together to turn your vision into reality and drive success for your business.";
         $service_intro_image = env("APP_URL", "somedefaultvalue") . "/img/images/business.jpg";
+        $newsletter_head = "Stay Informed, Stay Inspired: Subscribe Today";
+        $newsletter_desc = "Receive exclusive updates, insights, and inspiration straight to your inbox by subscribing to our newsletter today";
+        $newsletter_image = "./img/images/ai_product2.jpg";
         $data = [
             "small_title" => $small_title,
             "title" => $title,
@@ -56,6 +59,9 @@ class MainController extends Controller
             "service_intro_head" => $service_intro_head,
             "service_intro_desc" => $service_intro_desc,
             "service_intro_image" => $service_intro_image,
+            'newsletter_head' => $newsletter_head,
+            'newsletter_desc' => $newsletter_desc,
+            'newsletter_image' => $newsletter_image,
         ];
         return response()->view('web/contact', ['data' => $data]);
     }
@@ -154,5 +160,57 @@ class MainController extends Controller
 
         }
         return $data;
+    }
+
+    public function blogs(Request $request) {
+        $head_image_title = "Education / Key learnings";
+        $head_large = "Articles";
+        $subhead_image = "Elevating Insights / Empowering Employees";
+        $image = "./img/images/ai_product30.jpg";
+        $newsletter_head = "Accessible at your Convenience";
+        $newsletter_desc = "We are equipped to support you with comprehensive software solutions tailored to your needs";
+        $newsletter_image = "./img/images/ai_product21.jpg";
+        $service_intro_head = "How People Benefit from AI. How AI Relies on People";
+        $service_intro_desc = "The emergence of generative AI marks a significant advancement beyond conventional machine learning and AI models. It expands beyond mere recognition and reasoning intelligence to cultivate an operational intelligence that collaborates with humans, enhancing productivity and facilitating informed decision-making at all levels. Powered by cloud technology, this fusion of AI capabilities presents limitless possibilities and opens doors to new opportunities, empowering organizations to innovate and thrive in today's dynamic landscape";
+        $service_intro_image = env("APP_URL", "somedefaultvalue") . "/img/images/business.jpg";
+        $data = [
+            'head_image_title' => $head_image_title,
+            'head_large' => $head_large,
+            'subhead_image' => $subhead_image,
+            'headimage' => $image,
+            'newsletter_head' => $newsletter_head,
+            'newsletter_desc' => $newsletter_desc,
+            'newsletter_image' => $newsletter_image,
+            "service_into_head" => $service_intro_head,
+            "service_intro_desc" => $service_intro_desc,
+            "service_intro_image" => $service_intro_image
+        ];
+        return response()->view('web/blogs', ['data' => $data]);
+    }
+
+    public function blog(Request $request) {
+        $head_image_title = "Education / Key learnings";
+        $head_large = "Articles";
+        $subhead_image = "Elevating Insights / Empower Employees";
+        $image = "./img/images/ai_product30.jpg";
+        $newsletter_head = "Accessible at your Convenience";
+        $newsletter_desc = "We are equipped to support you with comprehensive software solutions tailored to your needs";
+        $newsletter_image = "./img/images/ai_product21.jpg";
+        $service_intro_head = "How People Benefit from AI. How AI Relies on People";
+        $service_intro_desc = "The emergence of generative AI marks a significant advancement beyond conventional machine learning and AI models. It expands beyond mere recognition and reasoning intelligence to cultivate an operational intelligence that collaborates with humans, enhancing productivity and facilitating informed decision-making at all levels. Powered by cloud technology, this fusion of AI capabilities presents limitless possibilities and opens doors to new opportunities, empowering organizations to innovate and thrive in today's dynamic landscape";
+        $service_intro_image = env("APP_URL", "somedefaultvalue") . "/img/images/business.jpg";
+        $data = [
+            'head_image_title' => $head_image_title,
+            'head_large' => $head_large,
+            'subhead_image' => $subhead_image,
+            'headimage' => $image,
+            'newsletter_head' => $newsletter_head,
+            'newsletter_desc' => $newsletter_desc,
+            'newsletter_image' => $newsletter_image,
+            "service_into_head" => $service_intro_head,
+            "service_intro_desc" => $service_intro_desc,
+            "service_intro_image" => $service_intro_image
+        ];
+        return response()->view('web/blog', ['data' => $data]);
     }
 }

@@ -55,7 +55,7 @@
     left: 45%;
     top: 25%;
     background-color: white;
-    height: 40%;
+    height: auto;
     padding: 60px;
 
 }
@@ -219,6 +219,19 @@
     letter-spacing: .5px;
 }
 
+.form-element-textarea .form-control {
+    font-family: Basis-regular;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #898a8d;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    color: #F1D3B2;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+}
+
 .form-control:focus {
     outline: 0;
 }
@@ -250,6 +263,7 @@
     animation: zoom-out 2s ease-in .5s;
     height: 100%;
     width: 100%;
+    min-height: 100vh;
 }
 
 .head-section video {
@@ -1275,4 +1289,10 @@
 #custom-lower-span span {
     font-size: 16px;
     line-height: 20px;
+}
+
+/*  Custom form container design */
+
+.text-container-know-form {
+    width: 50%;
 }

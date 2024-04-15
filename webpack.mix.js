@@ -25,4 +25,10 @@ mix.js('resources/js/app.js', 'public/js').js('resources/js/jquery.js', 'public/
         //
     ]).postCss('resources/css/custom.css', 'public/css', [
         //
+    ]).postCss('resources/css/blog.css', 'public/css', [
+        //
+    ]).postCss('resources/css/single-blog.css', 'public/css', [
+        //
+    ]).postCss('resources/css/font-icons.min.css', 'public/css', [
+        //
     ]);

@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{ mix('css/custom.css') }}" />
         @yield('custom_css')
 
-        <title>Natours | Exciting tours for adventurous people</title>
+        <title>Jkinda | Delivering Success</title>
     </head>
     <body>
 
@@ -36,6 +36,7 @@
                     <li class="navigation__item"><a href="/services" class="navigation__link">Services</a></li>
                     <li class="navigation__item"><a href="/product" class="navigation__link">Product</a></li>
                     <li class="navigation__item"><a href="/contact" class="navigation__link">Contact Us</a></li>
+                    <li class="navigation__item"><a href="/blogs" class="navigation__link">Blogs</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,35 +48,34 @@
               <div class="col-md-3 footer__details">
                 <div class="footer__company">
                   <h2>Logo</h2>
-                  <span>Title</span>
+                  <span>Jkinda</span>
                 </div>
                 <div class="footer__about">
                   <h2>About Us</h2>
-                  <span>Well something about us</span>
+                  <span>We're a dynamic service-oriented organization dedicated to providing AI-based solutions to businesses at a rapid pace</span>
                 </div>
                 <div class="footer__contact">
                   <h2>Contact Us</h2>
                   <span>+91 9719820967</span>
-                  <span>jkinda@gmail.com</span>
+                  <span>jkindaat@gmail.com</span>
                 </div>
               </div>
               <div class="col-md-3 footer__details">
                 <div  class="footer__links_about">
                   <h2>Information</h2>
-                  <span>About Us</span>
-                  <span>More Search</span>
-                  <span>Blog</span>
-                  <span>Testimonials</span>
+                  <span>Contact Us</span>
+                  <span>Projects</span>
+                  <span>Services</span>
+                  <span>Blogs</span>
                 </div>
               </div>
               <div class="col-md-2 footer__details">
                 <div  class="footer__links_help">
                   <h2>Helpful Links</h2>
                   <span>Services</span>
-                  <span>Support</span>
                   <span>Products</span>
-                  <span>Policy</span>
-                  <span>Philosophy</span>
+                  <span>Chatbot</span>
+                  <span>OCR</span>
                 </div>
               </div>
               <div class="col-md-4 footer__details">

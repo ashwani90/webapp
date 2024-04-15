@@ -8,5 +8,8 @@
     "/css/remo.css": "/css/remo.css",
     "/css/jkinda.css": "/css/jkinda.css",
     "/css/style.css": "/css/style.css",
-    "/css/custom.css": "/css/custom.css"
+    "/css/font-icons.min.css": "/css/font-icons.min.css",
+    "/css/blog.css": "/css/blog.css",
+    "/css/custom.css": "/css/custom.css",
+    "/css/single-blog.css": "/css/single-blog.css"
 }
