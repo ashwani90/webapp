@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ mix('css/remo.css') }}" />
         <link rel="stylesheet" href="{{ mix('css/all.min.css') }}" />
         <link rel="stylesheet" href="{{ mix('css/custom.css') }}" />
+        @yield('custom_css')
 
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
@@ -34,8 +35,7 @@
                     <li class="navigation__item"><a href="/products" class="navigation__link">Products</a></li>
                     <li class="navigation__item"><a href="/services" class="navigation__link">Services</a></li>
                     <li class="navigation__item"><a href="/product" class="navigation__link">Product</a></li>
-                    <li class="navigation__item"><a href="/philosophy" class="navigation__link">Philisophy</a></li>
-                    <li class="navigation__item"><a href="/service" class="navigation__link">Service</a></li>
+                    <li class="navigation__item"><a href="/contact" class="navigation__link">Contact Us</a></li>
                 </ul>
             </nav>
         </div>

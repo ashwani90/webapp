@@ -27,8 +27,37 @@ class MainController extends Controller
 
     }
 
-    public function philosophy(Request $request) {
-        return response()->view('web/philosophy');
+    public function contact(Request $request) {
+        $small_title = "Customized Chatbot";
+        $title = "Chatbots: Powering Business Conversations Forward";
+        $desc = "Introducing the catalyst for dynamic business communication: Chatbots. With their unparalleled ability to engage customers, streamline operations, and drive growth, Chatbots are revolutionizing the way businesses interact. Our cutting-edge solutions harness the power of Chatbots to propel conversations forward, empowering enterprises to connect effortlessly with their audience. Whether it's handling customer inquiries, automating tasks, or providing personalized assistance, our Chatbots deliver unmatched efficiency and effectiveness. Embrace the future of business communication and unlock new possibilities with Chatbots as your strategic ally. Elevate your brand, enhance customer satisfaction, and drive success with Chatbots leading the way. ";
+        $image = "./img/images/products_head.jpg";
+
+        $button_text = "Get to know more";
+        $button_link = "";
+        $head_image_title = "Get in Touch / Contact US";
+        $head_large = "Connect Now";
+        $subhead_image = "Your Guide to Finding Solutions: Let Us Connect You with the Right Experts";
+        $image2 = "./img/images/ai_product2.jpg";
+        $service_intro_head = "Let's Connect! Reach Out and Let's Start a Conversation Today";
+        $service_intro_desc = "At Jkinda, we specialize in delivering top-notch services such as custom AI development and software development tailored to your unique business needs. Whether you're looking to implement cutting-edge AI solutions or create bespoke software applications, we're here to help. With a commitment to personalized yet professional service, we're just one call away. Our dedicated team is ready to provide expert guidance and support to help your business grow and expand. Don't hesitate to reach out – let's work together to turn your vision into reality and drive success for your business.";
+        $service_intro_image = env("APP_URL", "somedefaultvalue") . "/img/images/business.jpg";
+        $data = [
+            "small_title" => $small_title,
+            "title" => $title,
+            "desc" => $desc,
+            "image" => $image,
+            "button_text" => $button_text,
+            "button_link" => $button_link,
+            'head_image_title' => $head_image_title,
+            'head_large' => $head_large,
+            'subhead_image' => $subhead_image,
+            'headimage' => $image2,
+            "service_intro_head" => $service_intro_head,
+            "service_intro_desc" => $service_intro_desc,
+            "service_intro_image" => $service_intro_image,
+        ];
+        return response()->view('web/contact', ['data' => $data]);
     }
     public function product(Request $request) {
         $small_title = "Customized Chatbot";
@@ -77,6 +106,9 @@ class MainController extends Controller
         $newsletter_head = "Accessible at your Convenience";
         $newsletter_desc = "We are equipped to support you with comprehensive software solutions tailored to your needs";
         $newsletter_image = "./img/images/ai_product21.jpg";
+        $service_intro_head = "How People Benefit from AI. How AI Relies on People";
+        $service_intro_desc = "The emergence of generative AI marks a significant advancement beyond conventional machine learning and AI models. It expands beyond mere recognition and reasoning intelligence to cultivate an operational intelligence that collaborates with humans, enhancing productivity and facilitating informed decision-making at all levels. Powered by cloud technology, this fusion of AI capabilities presents limitless possibilities and opens doors to new opportunities, empowering organizations to innovate and thrive in today's dynamic landscape";
+        $service_intro_image = env("APP_URL", "somedefaultvalue") . "/img/images/business.jpg";
         $data = [
             'head_image_title' => $head_image_title,
             'head_large' => $head_large,
@@ -85,6 +117,9 @@ class MainController extends Controller
             'newsletter_head' => $newsletter_head,
             'newsletter_desc' => $newsletter_desc,
             'newsletter_image' => $newsletter_image,
+            "service_into_head" => $service_intro_head,
+            "service_intro_desc" => $service_intro_desc,
+            "service_intro_image" => $service_intro_image
         ];
         return response()->view('web/services', ['data' => $data]);
     }

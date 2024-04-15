@@ -40,7 +40,7 @@
         <div class="whatsNew_icon text-center mb-4">
             <img alt="" loading="lazy" width="95" height="95" decoding="async" data-nimg="1" src="./img/svg/chatbot.svg" style="color: transparent;">
         </div>
-        <h4 class="text-center mb-3 px-4"><a href="/service/chatbot-development">Chatbot Development</a></h4>
+        <h4 class="text-center mb-3 px-4"><a href="/service/chatbot">Chatbot Development</a></h4>
         <p class="whatsNew_text_opaque__T996_ text-center">AI-powered visual validation for flawless UI and UX, without adding external SDK to your projects or drastically changing your functional test case code.</p>
     </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="whatsNew_icon text-center mb-4">
             <img alt="" loading="lazy" width="95" height="95" decoding="async" data-nimg="1" srcset="./img/svg/devops.svg" style="color: transparent;">
         </div>
-        <h4 class="text-center mb-3 px-4"><a href="/service/devops-development">Devops</a></h4>
+        <h4 class="text-center mb-3 px-4"><a href="/service/devops">Devops</a></h4>
         <p class="whatsNew_text_opaque__T996_ text-center">AI-powered visual validation for flawless UI and UX, without adding external SDK to your projects or drastically changing your functional test case code.</p>
     </div>
     </div>
