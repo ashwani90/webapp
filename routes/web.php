@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +21,8 @@ Route::get('/products', [ MainController::class, 'products' ])->name("products")
 Route::get('/service/{slug}', [ MainController::class, 'service' ])->name("service");
 Route::get('/services', [ MainController::class, 'services' ])->name("services");
 Route::get('/blogs', [ MainController::class, 'blogs' ])->name("blogs");
-Route::get('/blog', [ MainController::class, 'blog' ])->name("blog");
+Route::get('/en/blog', [ MainController::class, 'blog' ])->name("blog");
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

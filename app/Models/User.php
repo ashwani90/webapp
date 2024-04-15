@@ -41,4 +41,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function canManageBinshopsBlogPosts()
+    {
+        if ($this->id === 1 && $this->email === "ashwani90125@gmail.com"){
+           return true;
+        }
+        return false;
+    }
 }
