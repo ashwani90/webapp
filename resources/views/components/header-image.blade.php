@@ -6,7 +6,7 @@
         Your browser does not support the video tag.
     </video>
     @else
-    <img src="{{$data['headimage'] ?? './img/images/products_head.jpg'}}"/>
+    <img src="{{$data['headimage']}}"/>
     @endif
     <div class="overlay"></div>
     <div class="image-content">

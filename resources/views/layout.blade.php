@@ -6,14 +6,14 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="{{ mix('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="{{ mix('css/jkinda.css') }}" />
-        <link rel="stylesheet" href="{{ mix('css/remo.css') }}" />
-        <link rel="stylesheet" href="{{ mix('css/all.min.css') }}" />
-        <link rel="stylesheet" href="{{ mix('css/custom.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/jkinda.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/remo.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}" />
         @yield('custom_css')
 
         <title>Jkinda | Delivering Success</title>
@@ -36,7 +36,7 @@
                     <li class="navigation__item"><a href="/services" class="navigation__link">Services</a></li>
                     <li class="navigation__item"><a href="/product" class="navigation__link">Product</a></li>
                     <li class="navigation__item"><a href="/contact" class="navigation__link">Contact Us</a></li>
-                    <li class="navigation__item"><a href="/blogs" class="navigation__link">Blogs</a></li>
+                    <li class="navigation__item"><a href="/en/blog" class="navigation__link">Blogs</a></li>
                 </ul>
             </nav>
         </div>
@@ -101,7 +101,7 @@
           <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="{{ mix('js/carousel.js') }}">
+  <script src="{{ asset('js/carousel.js') }}">
           </script>
           <script>
             $( document ).ready(function() {

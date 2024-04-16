@@ -1,90 +1,113 @@
-@extends("layouts.app",['title'=>$title])
-
-@section('blog-custom-css')
-    <link type="text/css" href="{{ asset('binshops-blog.css') }}" rel="stylesheet">
+@extends('layout')
+@section('custom_css')
+<link rel="stylesheet" href="{{ asset('css/blog.css') }}" />
 @endsection
+@section('section')
+@include('components.header-image')
 
-@section("content")
-
-    <div class='col-sm-12 binshopsblog_container'>
-        @if(\Auth::check() && \Auth::user()->canManageBinshopsBlogPosts())
-            <div class="text-center">
-                <p class='mb-1'>You are logged in as a blog admin user.
-                    <br>
-                    <a href='{{route("binshopsblog.admin.index")}}'
-                       class='btn border  btn-outline-primary btn-sm '>
-                        <i class="fa fa-cogs" aria-hidden="true"></i>
-                        Go To Blog Admin Panel</a>
-                </p>
-            </div>
-        @endif
-
-        <div class="row">
-            <div class="col-md-9">
-
-                @if($category_chain)
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                @forelse($category_chain as $cat)
-                                    / <a href="{{$cat->categoryTranslations[0]->url($locale)}}">
-                                        <span class="cat1">{{$cat->categoryTranslations[0]['category_name']}}</span>
-                                    </a>
-                                @empty @endforelse
-                            </div>
-                        </div>
-                    </div>
-                @endif
-
-                @if(isset($binshopsblog_category) && $binshopsblog_category)
-                    <h2 class='text-center'> {{$binshopsblog_category->category_name}}</h2>
-
-                    @if($binshopsblog_category->category_description)
-                        <p class='text-center'>{{$binshopsblog_category->category_description}}</p>
-                    @endif
-
-                @endif
-
-                <div class="container">
-                    <div class="row">
-                        @forelse($posts as $post)
-                            @include("binshopsblog::partials.index_loop")
-                        @empty
-                            <div class="col-md-12">
-                                <div class='alert alert-danger'>No posts!</div>
-                            </div>
-                        @endforelse
+<section class="service" style="margin-top: 20px;">
+<h3 class="section-head-featured">Featured Stories </h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="insight-container">
+                <img class="insight-big-image" src="./img/images/ai_generated.png" />
+                <div class="insight-text-container">
+                    <h2>OCR leading the way</h2>
+                    <div class="subhead">
+                        <span>Press Releases | 01 Feb 2024</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h6>Blog Categories</h6>
-                <ul class="binshops-cat-hierarchy">
-                    @if($categories)
-                        @include("binshopsblog::partials._category_partial", [
-    'category_tree' => $categories,
-    'name_chain' => $nameChain = "",
-    'routeWithoutLocale' => $routeWithoutLocale
-    ])
-                    @else
-                        <span>No Categories</span>
-                    @endif
-                </ul>
-            </div>
         </div>
+        <div class="col-md-6">
+            <div class="insight-container-right">
+                <div class="insight-item">
+                <img class="insight-small-image" src="./img/images/ai_generated.png" />
+                <div class="insight-text-container-right">
+                    <h2>OCR leading the way</h2>
+                    <div class="subhead">
+                        <span>Press Releases | 01 Feb 2024</span>
+                    </div>
+                </div>
+                </div>
 
-        @if (config('binshopsblog.search.search_enabled') )
-            @include('binshopsblog::sitewide.search_form')
-        @endif
-        <div class="row">
-            <div class="col-md-12 text-center">
-                @foreach($lang_list as $lang)
-                    <a href="{{route("binshopsblog.index" , $lang->locale)}}">
-                        <span>{{$lang->name}}</span>
-                    </a>
-                @endforeach
             </div>
+            <hr/>
+            <div class="insight-container-right">
+                <div class="insight-item">
+                <img class="insight-small-image" src="./img/images/ai_generated.png" />
+                <div class="insight-text-container-right">
+                    <h2>OCR leading the way</h2>
+                    <div class="subhead">
+                        <span>Press Releases | 01 Feb 2024</span>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <hr/>
+            <div class="insight-container-right">
+                <div class="insight-item">
+                <img class="insight-small-image" src="./img/images/ai_generated.png" />
+                <div class="insight-text-container-right">
+                    <h2>OCR leading the way</h2>
+                    <div class="subhead">
+                        <span>Press Releases | 01 Feb 2024</span>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <hr/>
+            <div class="insight-container-right">
+                <div class="insight-item">
+                <img class="insight-small-image" src="./img/images/ai_generated.png" />
+                <div class="insight-text-container-right">
+                    <h2>OCR leading the way</h2>
+                    <div class="subhead">
+                        <span>Press Releases | 01 Feb 2024</span>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <hr/>
         </div>
     </div>
+</div>
 
+        </section>
+<section  class="service blog-container-section">
+
+    <h3 class="section-head-featured">Discover More </h3>
+    @if($category_chain)
+    <div class="tag-container">
+        <ul>
+            <li><b>TAGS</b></li>
+            @forelse($category_chain as $cat)
+            <li><a href="{{$cat->categoryTranslations[0]->url($locale)}}"> {{$cat->categoryTranslations[0]['category_name']}}</a></li>
+            @empty @endforelse
+
+        </ul>
+    </div>
+    @endif
+
+    <div class="row">
+    @foreach($posts as $post)
+    <div class="col-md-3 blog-item">
+            <img class="blog-image" src="./img/images/ai_generated.png" />
+            <div class="blog-container-text">
+                <span class="category-text">Javascript</span>
+               <h2><a href="{{$post->url($locale, $routeWithoutLocale)}}" >{{$post->title}}</a></h2>
+                <span class="subhead">
+                {{$post->post->author->name}} | {{date('d M Y ', strtotime($post->post->posted_at))}}
+                </span>
+            </div>
+        </div>
+    @endforeach
+
+    </div>
+</section>
 @endsection
+

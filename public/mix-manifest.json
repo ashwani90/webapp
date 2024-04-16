@@ -1,15 +1,4 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/jquery.js": "/js/jquery.js",
-    "/js/carousel.js": "/js/carousel.js",
-    "/js/swiper.js": "/js/swiper.js",
-    "/css/all.min.css": "/css/all.min.css",
-    "/css/swiper.css": "/css/swiper.css",
-    "/css/remo.css": "/css/remo.css",
-    "/css/jkinda.css": "/css/jkinda.css",
-    "/css/style.css": "/css/style.css",
-    "/css/font-icons.min.css": "/css/font-icons.min.css",
-    "/css/blog.css": "/css/blog.css",
-    "/css/custom.css": "/css/custom.css",
-    "/css/single-blog.css": "/css/single-blog.css"
+    "/css/app.css": "/css/app.css"
 }
