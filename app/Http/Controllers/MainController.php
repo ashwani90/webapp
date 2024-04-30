@@ -65,18 +65,35 @@ class MainController extends Controller
         ];
         return response()->view('web/contact', ['data' => $data]);
     }
-    public function product(Request $request) {
-        $small_title = "Customized Chatbot";
-        $title = "Chatbots: Powering Business Conversations Forward";
-        $desc = "Introducing the catalyst for dynamic business communication: Chatbots. With their unparalleled ability to engage customers, streamline operations, and drive growth, Chatbots are revolutionizing the way businesses interact. Our cutting-edge solutions harness the power of Chatbots to propel conversations forward, empowering enterprises to connect effortlessly with their audience. Whether it's handling customer inquiries, automating tasks, or providing personalized assistance, our Chatbots deliver unmatched efficiency and effectiveness. Embrace the future of business communication and unlock new possibilities with Chatbots as your strategic ally. Elevate your brand, enhance customer satisfaction, and drive success with Chatbots leading the way. ";
-        $image = "./img/images/products_head.jpg";
+    public function product(Request $request, $slug) {
+        $product = DB::table('products_info')->where('slug', $slug)->get();
+
+        $product = $product[0];
+        $product_features = DB::table('product_features')->where('product_id', $product->id)->get();
+        $small_title = $product->product_head;
+        $product->product_foot_head;
+        $title = $product->product_foot_head;
+        $desc = $product->product_foot_desc;
+        $image = env("APP_URL", "somedefaultvalue") .$product->product_foot_image;
 
         $button_text = "Get to know more";
         $button_link = "";
         $head_image_title = "What We Do / Product";
-        $head_large = "Customized Chatbot";
-        $subhead_image = "Enhancing Dialogue, Transforming Productivity";
-        $image2 = "./img/ai_for/chatbot-3.webp";
+        $head_large = $product->product_head;
+        $subhead_image = $product->product_subhead;
+        $image2 = env("APP_URL", "somedefaultvalue") . $product->product_head_image;
+        $intro_image = env("APP_URL", "somedefaultvalue") . $product->product_intro_image;
+        $intro_head = $product->product_intro_head;
+        $intro_desc = $product->product_intro_desc;
+        $features = [];
+        foreach ($product_features as $feature) {
+            array_push($features, [
+                "image" => env("APP_URL", "somedefaultvalue") . $feature->icon_image,
+                "head" => $feature->head,
+                "desc" => $feature->feature_desc
+            ]);
+        }
+
         $data = [
             "small_title" => $small_title,
             "title" => $title,
@@ -88,6 +105,10 @@ class MainController extends Controller
             'head_large' => $head_large,
             'subhead_image' => $subhead_image,
             'headimage' => $image2,
+            'intro_image' => $intro_image,
+            'intro_head' => $intro_head,
+            'intro_desc' => $intro_desc,
+            'features' => $features
         ];
         return view('web.product', ['data' => $data]);
     }

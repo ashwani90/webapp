@@ -413,8 +413,9 @@
 }
 
 .feature_features_box_wrapper__B4aMP .card {
-    background: #FED8A5; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FED8A5, #60FBE1);
+    background: #FED8A5; /* fallback for old browsers */
+    /* #BFF098 → #6FD6FF  #93A5CF → #E4EfE9 */ /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(147, 165, 207, .8), rgba(228, 239, 233, .8));
 }
 
 /* services styles*/

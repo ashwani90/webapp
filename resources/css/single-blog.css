@@ -468,3 +468,6 @@ input[type="button"], input[type="text"], input[type="email"], input[type="searc
 .blog-right-side-bar {
     color: #828282;
 }
+.blog-post-content p strong {
+    font-size: 1.6rem;
+}

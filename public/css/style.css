@@ -426,8 +426,8 @@ body {
 .subs__container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: orange;
+  align-items: center; /* #868F96 → #596164 #868F96 → #596164 Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #868F96, #596164);
   padding: 60px; }
   .subs__container h1 {
     color: white;
@@ -519,7 +519,7 @@ body {
     transform: scale(1.2, 1.2); } }
 
 .footer {
-  background-color: black;
+  background-color: #1e2222;
   color: white; }
   .footer__details {
     padding-left: 50px; }
@@ -1057,7 +1057,8 @@ body {
 
 .product__desc {
     padding: 20px;
-    box-shadow: lightgray 1px 2px;
+    /* box-shadow: lightgray 1px 2px; */
+    padding: 10px 30px;
 }
 
 
@@ -1217,4 +1218,9 @@ color: grey;
         border-bottom: 2px solid orange; }
   .product__features .row {
     border: none; }
+
+    .product__item__list {
+        font-size: larger;
+        color: darkgray;
+    }
 

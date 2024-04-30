@@ -26888,10 +26888,140 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/css/jkinda.css":
+/*!**********************************!*\
+  !*** ./resources/css/jkinda.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/main_comp.css":
+/*!*************************************!*\
+  !*** ./resources/css/main_comp.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/single-blog.css":
+/*!***************************************!*\
+  !*** ./resources/css/single-blog.css ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/remo.css":
+/*!********************************!*\
+  !*** ./resources/css/remo.css ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/style.css":
+/*!*********************************!*\
+  !*** ./resources/css/style.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/swiper.css":
+/*!**********************************!*\
+  !*** ./resources/css/swiper.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/font-icons.min.css":
+/*!******************************************!*\
+  !*** ./resources/css/font-icons.min.css ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/blog.css":
+/*!********************************!*\
+  !*** ./resources/css/blog.css ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/custom.css":
+/*!**********************************!*\
+  !*** ./resources/css/custom.css ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -39375,7 +39505,16 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/custom": 0,
+/******/ 			"css/blog": 0,
+/******/ 			"css/font-icons.min": 0,
+/******/ 			"css/swiper": 0,
+/******/ 			"css/style": 0,
+/******/ 			"css/remo": 0,
+/******/ 			"css/single-blog": 0,
+/******/ 			"css/main_comp": 0,
+/******/ 			"css/jkinda": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -39425,8 +39564,18 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/blog.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/custom.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/jkinda.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/main_comp.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/single-blog.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/remo.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/swiper.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/custom","css/blog","css/font-icons.min","css/swiper","css/style","css/remo","css/single-blog","css/main_comp","css/jkinda"], () => (__webpack_require__("./resources/css/font-icons.min.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

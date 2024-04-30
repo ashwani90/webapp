@@ -1,4 +1,13 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/custom.css": "/css/custom.css",
+    "/css/blog.css": "/css/blog.css",
+    "/css/font-icons.min.css": "/css/font-icons.min.css",
+    "/css/swiper.css": "/css/swiper.css",
+    "/css/style.css": "/css/style.css",
+    "/css/remo.css": "/css/remo.css",
+    "/css/single-blog.css": "/css/single-blog.css",
+    "/css/main_comp.css": "/css/main_comp.css",
+    "/css/jkinda.css": "/css/jkinda.css"
 }

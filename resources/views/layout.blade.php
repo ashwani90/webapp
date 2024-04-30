@@ -34,7 +34,7 @@
                     <li class="navigation__item"><a href="/" class="navigation__link">Home</a></li>
                     <li class="navigation__item"><a href="/products" class="navigation__link">Products</a></li>
                     <li class="navigation__item"><a href="/services" class="navigation__link">Services</a></li>
-                    <li class="navigation__item"><a href="/product" class="navigation__link">Product</a></li>
+
                     <li class="navigation__item"><a href="/contact" class="navigation__link">Contact Us</a></li>
                     <li class="navigation__item"><a href="/en/blog" class="navigation__link">Blogs</a></li>
                 </ul>

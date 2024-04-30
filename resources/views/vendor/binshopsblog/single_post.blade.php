@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/font-icons.min.css') }}" >
 @endsection
 @section('section')
-@include('components.header-image')
+@include('components.header-image-blog')
 @if(config("binshopsblog.reading_progress_bar"))
         <div id="scrollbar">
             <div id="scrollbar-bg"></div>
@@ -27,16 +27,12 @@
                                 <!-- start vimeo video -->
                                 <div class="blog-post-content margin-4-half-rem-bottom">
                                     <div class="fit-videos">
-                                        <iframe src="https://player.vimeo.com/video/176916362?title=0&byline=0&portrait=0&autoplay=true&muted=1" width="100%" height="400" allowfullscreen></iframe>
+                                        <!-- <iframe src="https://player.vimeo.com/video/176916362?title=0&byline=0&portrait=0&autoplay=true&muted=1" width="100%" height="400" allowfullscreen></iframe> -->
                                     </div>
                                 </div>
                                 <!-- end vimeo video -->
                                 {!! $post->post_body_output() !!}
-                                <img src="https://via.placeholder.com/780x500" alt="" class="w-100 border-radius-6px margin-4-rem-bottom wow animate__fadeIn">
-                                <!-- dropcaps -->
-                                <p class="wow animate__fadeIn"><span class="alt-font first-letter first-letter-big text-fast-blue">M</span>aster design is simply dummy text of the printing and typesetting industry. lorem ipsum has been the an industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <!-- end dropcaps -->
-                                <p class="wow animate__fadeIn">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
                             </div>
                             <div class="col-12 d-flex flex-wrap align-items-center padding-15px-tb mx-auto margin-20px-bottom wow animate__fadeIn">
                                 <div class="col-12 col-md-9 text-center text-md-start sm-margin-10px-bottom px-0">

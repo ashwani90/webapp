@@ -145,6 +145,10 @@
     width: 100%;
 }
 
+.blog-container-text h2 a {
+    color: #1e2222;
+}
+
 .blog-container-text  {
     margin-top: 15px;
 }
@@ -162,10 +166,6 @@
 
 .blog-container-text  h2 {
     margin-top: 10px;
-}
-
-.blog-container-text  h2 a {
-    color: #1e2222;
 }
 
 .blog-container-text  h2:hover {

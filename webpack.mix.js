@@ -13,4 +13,15 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .vue()
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+    .css('resources/css/app.css', 'public/css')
+    .css('resources/css/blog.css', 'public/css')
+    .css('resources/css/custom.css', 'public/css')
+    .css('resources/css/jkinda.css', 'public/css')
+    .css('resources/css/main_comp.css', 'public/css')
+    .css('resources/css/single-blog.css', 'public/css')
+    .css('resources/css/remo.css', 'public/css')
+    .css('resources/css/style.css', 'public/css')
+    .css('resources/css/swiper.css', 'public/css')
+    .css('resources/css/font-icons.min.css', 'public/css')
+    ;
