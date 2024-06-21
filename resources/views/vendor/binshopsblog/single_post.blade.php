@@ -2,6 +2,7 @@
 @section('custom_css')
 <link rel="stylesheet" href="{{ asset('css/single-blog.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('css/font-icons.min.css') }}" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css"/>
 @endsection
 @section('section')
 @include('components.header-image-blog')
@@ -228,3 +229,42 @@
         </section>
 @endsection
 
+
+
+@section('custom_js')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.js"></script>
+
+<script>
+
+ (function(){
+
+  document.addEventListener('DOMContentLoaded', function(event) {
+
+    var list = document.querySelectorAll('.markup-snippet');
+
+    [].forEach.call(list, function(el) {
+      var snippet = el.innerHTML.replace(/</g,'&lt;');
+          snippet = snippet.replace(/ /g,'&nbsp;');
+      var code = '<pre class="language-markup"><code class="language-markup">'+snippet+'</code></pre>';
+      el.insertAdjacentHTML('afterend',code);
+    });
+
+    var list = document.querySelectorAll('pre');
+
+    [].forEach.call(list, function(el) {
+        el.classList.remove('language-markup');
+      el.classList.add('language-markup');
+    });
+
+    // if your page has prism.js you get syntax highlighting
+    if(window.Prism){
+      Prism.highlightAll(false);
+    }
+
+  });
+
+})();
+
+    </script>
+@endsection

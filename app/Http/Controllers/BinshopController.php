@@ -71,7 +71,7 @@ class BinshopController extends Controller
                 ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
                 ->orderBy("posted_at", "desc")
                 ->whereIn('binshops_posts.id', $posts->pluck('id'))
-                ->paginate(config("binshopsblog.per_page", 10));
+                ->paginate(config("binshopsblog.per_page", 12));
 
             // at the moment we handle this special case (viewing a category) by hard coding in the following two lines.
             // You can easily override this in the view files.
@@ -83,8 +83,15 @@ class BinshopController extends Controller
                 ->where("is_published" , '=' , true)
                 ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
                 ->orderBy("posted_at", "desc")
-                ->paginate(config("binshopsblog.per_page", 10));
+                ->paginate(config("binshopsblog.per_page", 12));
         }
+
+        $featured_posts = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
+                ->where('lang_id', $request->get("lang_id"))
+                ->where("is_published" , '=' , true)
+                ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
+                ->orderBy("seo_title", "desc")
+                ->limit(5)->get();
 
         //load category hierarchy
         $rootList = BinshopsCategory::roots()->get();
@@ -97,6 +104,7 @@ class BinshopController extends Controller
             'category_chain' => $categoryChain,
             'categories' => $rootList,
             'posts' => $posts,
+            'featured_posts' => $featured_posts,
             'title' => $title,
             'routeWithoutLocale' => $request->get("routeWithoutLocale"),
             'data' => $data
