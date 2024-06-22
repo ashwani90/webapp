@@ -48,7 +48,7 @@
                                     <a class="likes-count text-uppercase text-extra-dark-gray font-weight-500" href="#"><i class="far fa-heart"></i><span>05 Likes</span></a>
                                 </div>
                             </div>
-                            <div class="col-12 mx-auto margin-50px-bottom md-margin-30px-bottom wow animate__fadeIn">
+                            <!-- <div class="col-12 mx-auto margin-50px-bottom md-margin-30px-bottom wow animate__fadeIn">
                                 <div class="d-block d-md-flex box-shadow-small align-items-center border-radius-5px padding-4-rem-all">
                                     <div class="w-130px text-center margin-60px-right sm-margin-auto-lr">
                                         <img src="https://via.placeholder.com/125x125" class="rounded-circle w-110px" alt=""/>
@@ -60,8 +60,8 @@
                                         <a href="blog-grid.html" class="btn btn-link btn-large text-extra-dark-gray margin-20px-top">All author posts</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 text-center elements-social social-icon-style-09 mx-auto">
+                            </div> -->
+                            <!-- <div class="col-12 text-center elements-social social-icon-style-09 mx-auto">
                                 <ul class="medium-icon">
                                     <li class="wow animate__fadeIn" data-wow-delay="0.2s"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i><span></span></a></li>
                                     <li class="wow animate__fadeIn" data-wow-delay="0.3s"><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i><span></span></a></li>
@@ -69,7 +69,7 @@
                                     <li class="wow animate__fadeIn" data-wow-delay="0.5s"><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i><span></span></a></li>
                                     <li class="wow animate__fadeIn" data-wow-delay="0.6s"><a class="behance" href="http://www.behance.com/" target="_blank"><i class="fab fa-behance"></i><span></span></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- start sidebar -->
@@ -83,7 +83,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="text-extra-dark-gray border-all border-color-medium-gray border-radius-4px padding-40px-all text-center margin-5-rem-bottom xs-margin-35px-bottom">
+                        <!-- <div class="text-extra-dark-gray border-all border-color-medium-gray border-radius-4px padding-40px-all text-center margin-5-rem-bottom xs-margin-35px-bottom">
                             <a href="about-me.html"><img src="https://via.placeholder.com/125x125" alt="" class="rounded-circle margin-5px-bottom w-100px d-block mx-auto"/></a>
                             <a href="blog-grid.html" class="text-extra-dark-gray alt-font font-weight-500 margin-20px-top d-inline-block text-medium">Colene Landin</a>
                             <span class="text-medium d-block line-height-18px margin-20px-bottom">Co-founder</span>
@@ -96,49 +96,30 @@
                                     <li class="mx-0"><a class="instagram" href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i><span></span></a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="margin-5-rem-bottom xs-margin-35px-bottom wow animate__fadeIn">
                             <span class="alt-font font-weight-500 text-large text-extra-dark-gray d-block margin-35px-bottom">Categories</span>
                             <ul class="list-style-07 list-unstyled">
-                                <!-- TODO:: Get top 10 categories -->
-                                <li><a href="blog-grid.html">Entertainment</a><span class="item-qty">10</span></li>
-                                <li><a href="blog-grid.html">Business</a><span class="item-qty">05</span></li>
-                                <li><a href="blog-grid.html">Creative</a><span class="item-qty">03</span></li>
-                                <li><a href="blog-grid.html">Lifestyle</a><span class="item-qty">02</span></li>
-                                <li><a href="blog-grid.html">Fashion</a><span class="item-qty">19</span></li>
-                                <li><a href="blog-grid.html">Design</a><span class="item-qty">21</span></li>
+                            @foreach($categories as $category)
+                                <li><a href="blog-grid.html">{{$category->categoryTranslations[0]->category_name}}</a><span class="item-qty"></span></li>
+                            @endforeach
+
                             </ul>
                         </div>
                         <div class="margin-5-rem-bottom xs-margin-35px-bottom wow animate__fadeIn">
                             <span class="alt-font font-weight-500 text-large text-extra-dark-gray d-block margin-35px-bottom">Recent posts</span>
                             <ul class="latest-post-sidebar position-relative">
+                                @foreach ($recent_posts as $post)
                                 <li class="d-flex wow animate__fadeIn" data-wow-delay="0.2s">
                                     <figure class="flex-shrink-0">
-                                        <a href="blog-post-layout-01.html"><img class="border-radius-3px" src="https://via.placeholder.com/940x940" alt=""></a>
+                                        <a href="{{$post->url($locale, $routeWithoutLocale)}}"><img class="border-radius-3px" src="{{ request()->getSchemeAndHttpHost() . '/blog_images/'.$post->image_large }}" alt=""></a>
                                     </figure>
                                     <div class="media-body flex-grow-1">
-                                        <a href="blog-post-layout-01.html" class="font-weight-500 text-extra-dark-gray d-inline-block margin-five-bottom md-margin-two-bottom">Fashion is anything</a>
-                                        <span class="text-medium d-block line-height-22px">Lorem ipsum is simply as dummy text of the...</span>
+                                        <a href="{{$post->url($locale, $routeWithoutLocale)}}" class="font-weight-500 text-extra-dark-gray d-inline-block margin-five-bottom md-margin-two-bottom">{{$post->title}}</a>
+                                        <span class="text-medium d-block line-height-22px">{{$post->post->author->name}} | {{date('d M Y ', strtotime($post->post->posted_at))}}</span>
                                     </div>
                                 </li>
-                                <li class="d-flex wow animate__fadeIn" data-wow-delay="0.4s">
-                                    <figure class="flex-shrink-0">
-                                        <a href="blog-post-layout-02.html"><img class="border-radius-3px" src="https://via.placeholder.com/800x800" alt=""></a>
-                                    </figure>
-                                    <div class="media-body flex-grow-1">
-                                        <a href="blog-post-layout-02.html" class="font-weight-500 text-extra-dark-gray d-inline-block margin-five-bottom md-margin-two-bottom">Design transcends </a>
-                                        <span class="text-medium d-block line-height-22px">Lorem ipsum is simply as dummy text of the...</span>
-                                    </div>
-                                </li>
-                                <li class="d-flex wow animate__fadeIn" data-wow-delay="0.6s">
-                                    <figure class="flex-shrink-0">
-                                        <a href="blog-post-layout-03.html"><img class="border-radius-3px" src="https://via.placeholder.com/800x800" alt=""></a>
-                                    </figure>
-                                    <div class="media-body flex-grow-1">
-                                        <a href="blog-post-layout-03.html" class="font-weight-500 text-extra-dark-gray d-inline-block margin-five-bottom md-margin-two-bottom">Never give in except</a>
-                                        <span class="text-medium d-block line-height-22px">Lorem ipsum is simply as dummy text of the...</span>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="margin-5-rem-bottom xs-margin-35px-bottom md-padding-3-rem-top wow animate__fadeIn">
@@ -203,20 +184,25 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-9 wow animate__fadeIn">
-                        <form action="#" method="post">
+                        <form action="{{route("binshopsblog.comments.add_new_comment",[app('request')->get('locale'),$post->slug])}}" method="post">
+                        {{ csrf_field() }}
                             <div class="row align-items-center">
                                 <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <label class="margin-15px-bottom" for="basic-name">Your name <span class="text-radical-red">*</span></label>
-                                    <input id="basic-name" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="text" name="name" placeholder="Enter your name">
+                                    <label class="margin-15px-bottom" for="author-name">Your name <span class="text-radical-red">*</span></label>
+                                    <input id="author-name" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="text" name="author-name" placeholder="Enter your name">
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <label class="margin-15px-bottom" for="basic-email">Your email address <span class="text-radical-red">*</span></label>
-                                    <input id="basic-email" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="email" name="email" placeholder="Enter your email">
+                                    <label class="margin-15px-bottom" for="author-email">Your email address <span class="text-radical-red">*</span></label>
+                                    <input id="author-email" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="email" name="author-email" placeholder="Enter your email">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="margin-15px-bottom">Your comment</div>
                                     <textarea class="medium-textarea border-radius-4px bg-white h-120px margin-2-half-rem-bottom" rows="6" name="comment" placeholder="Enter your comment"></textarea>
                                 </div>
+                                @if($captcha)
+                                    {{--Captcha is enabled. Load the type class, and then include the view as defined in the captcha class --}}
+                                    @include($captcha->view())
+                                @endif
                                 <div class="col-12 sm-margin-20px-bottom">
                                     <input type="hidden" name="redirect" value="">
                                     <input class="btn btn-medium btn-dark-gray mb-0 btn-round-edge-small submit" type="submit" name="submit" value="Post Comment">

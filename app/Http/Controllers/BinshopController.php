@@ -136,6 +136,12 @@ class BinshopController extends Controller
             "service_intro_image" => $service_intro_image
         ];
         $blogPostSlug = $request->route('blogPostSlug');
+        $recent_posts = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
+                ->where('lang_id', $request->get("lang_id"))
+                ->where("is_published" , '=' , true)
+                ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
+                ->orderBy("posted_at", "desc")
+                ->limit(5)->get();
 
         // the published_at + is_published are handled by BinshopsBlogPublishedScope, and don't take effect if the logged in user can manage log posts
         $blog_post = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
@@ -162,6 +168,7 @@ class BinshopController extends Controller
             'locale' => $request->get("locale"),
             'routeWithoutLocale' => $request->get("routeWithoutLocale"),
             'data' => $data,
+            'recent_posts' => $recent_posts,
         ]);
     }
 }
