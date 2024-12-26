@@ -64,6 +64,22 @@ pre {
 
 }
 
+
+/* know us section design */
+@media only screen and (max-width: 1000px) {
+    .know-us-container .text-container-know {
+        left: 20%;
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .know-us-container .text-container-know {
+        left: 0%;
+        top: -25%;
+    }
+}
+
 .text-container-know .small-head {
     font-size: 1.2rem;
     line-height: 3.5rem;

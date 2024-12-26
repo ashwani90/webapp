@@ -1,19 +1,11 @@
-.swiper {
-    width: 1400px;
-    height: 99.5vh;
-    overflow: visible;
-    position: relative;
- }
- .swiper .swiper-slide .home-banner-box{
-    width: inherit;
-    height: inherit;
- }
+.carousel-inner {
+    height: 95vh;
+}
 
-  .home-banner-links{
-    width: 1260px;
-    height: 100%;
-    overflow: hidden;
- }
+.own-carousel {
+    margin-bottom: 40px;
+}
+
 .home-banner-title {
     opacity: 1;
     z-index: 2;
@@ -366,3 +358,90 @@ a {
     color: #e41165;
 }
 
+.blog__card__item {
+    position: relative;
+}
+
+/* New carousel styling */
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+    z-index: 100;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 100;
+    display: flex;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    z-index: 2000;
+    top: 5rem;
+}
+
+.carousel-caption h5{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.carousel-caption p{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 3rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.carousel-caption div{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.carousel-caption div button{
+    font-size: 1.4rem;
+}
+
+.carousel-item {
+    height: 95vh;
+}
+
+@media only screen and (max-width: 1158px) {
+    .carousel-item  {
+        height: auto;
+        width: 100%;
+    }
+    .carousel-inner {
+        height: auto;
+    }
+}
+
+.footer__links_help {
+    padding: 0px 40px;
+}
+
+.footer__links_subs {
+    padding: 0 40px 40px 40px;
+}
+
+.philosophy__item__content {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
