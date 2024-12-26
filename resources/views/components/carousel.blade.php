@@ -10,8 +10,8 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
     <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Empower Your Evolution: Transform with AI</h5>
+        <p>Unlock the potential of AI to propel your evolution forward. Embrace transformative technologies for a future empowered by innovation.</p>
         <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
@@ -20,8 +20,8 @@
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">
-    <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+    <h5>Elevate Your Experience: Upgrade Your Software Today</h5>
+        <p>Enhance efficiency and elevate performance with our customized software solutions. Elevate your experience and stay ahead in today's competitive landscape by upgrading your software now.</p>
         <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
@@ -30,8 +30,8 @@
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">
-    <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+    <h5>Maximize Efficiency, Optimize Performance</h5>
+        <p>Unlock peak productivity with our solutions designed to maximize efficiency and optimize performance, empowering you to achieve your goals with precision and effectiveness</p>
         <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
@@ -40,8 +40,8 @@
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">
-    <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+    <h5>Tailored Solutions, Crafted for Your Success </h5>
+        <p>Discover bespoke software solutions meticulously designed to elevate your business outcomes. Experience innovation tailored precisely to your needs for unparalleled success.</p>
         <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
