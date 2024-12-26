@@ -45,7 +45,7 @@
 
           <footer class="footer">
             <div class="row footer__content">
-              <div class="col-md-3 footer__details">
+              <div class="col-md-3 footer__details d-flex flex-column justify-content-around">
                 <div class="footer__company">
                 <img alt="" loading="lazy" width="70" height="50" decoding="async" data-nimg="1" src="./img/jkinda_logo.png" style="color: transparent;">
                   

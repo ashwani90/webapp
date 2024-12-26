@@ -434,7 +434,7 @@ a {
 }
 
 .footer__links_help {
-    padding: 0px 40px;
+    padding-left: 40px;
 }
 
 .footer__links_subs {
@@ -444,4 +444,10 @@ a {
 .philosophy__item__content {
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.footer__contact {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
