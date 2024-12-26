@@ -189,9 +189,10 @@ pre {
     transition: all 3s ease-in;
    }
 
-   .philosophy__tag__image {
+.philosophy__tag__image {
     overflow: hidden;
-   }
+    margin-bottom: 20px;
+}
 
 .philosophy__tag__image img:hover{
  transform: scale(1.2);
@@ -47911,7 +47912,9 @@ body {
   .philosophy__tag__image img {
     width: inherit;
     height: inherit; }
-
+    .philosophy__tag__image {
+        margin-bottom: 20px;
+    }
 .service {
   padding: 50px; }
   .service .column {

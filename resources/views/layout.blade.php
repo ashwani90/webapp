@@ -47,8 +47,8 @@
             <div class="row footer__content">
               <div class="col-md-3 footer__details">
                 <div class="footer__company">
-                  <h2>Logo</h2>
-                  <span>Jkinda</span>
+                <img alt="" loading="lazy" width="70" height="50" decoding="async" data-nimg="1" src="./img/jkinda_logo.png" style="color: transparent;">
+                  
                 </div>
                 <div class="footer__about">
                   <h2>About Us</h2>

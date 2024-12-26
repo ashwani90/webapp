@@ -10,12 +10,11 @@
             </div>
               <div class="philosophy">
                   <div class="philosophy__tag row">
-                      <div class="philosophy__tag__image philosophy__small col-md-6">
-                          <img class="odd" src="{{ asset('img/images/ai_product1.jpg') }}"/>
+                      <div class="philosophy__tag__image philosophy__small col-md-6 col-xs-12">
+                          <img class="odd" src="{{ asset('img/images/ai_product1.jpg') }}" style="width: 100%"/>
                       </div>
 
-                          <div class="clearfix"></div>
-                          <div class="philosophy__item__content col-md-6">
+                          <div class="philosophy__item__content col-md-6 col-xs-12">
                           <h1>Customer Centric</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Empowering your business, one solution at a time</h3>
@@ -27,8 +26,7 @@
                   <div class="philosophy__tag row">
 
 
-                          <div class="clearfix"></div>
-                          <div class="philosophy__item__content col-md-6">
+                          <div class="philosophy__item__content col-md-6 col-xs-12">
                           <h1>Innovation</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Excellence in every detail.</h3>
@@ -36,17 +34,16 @@
                           <span></span>
                           <p>Quality is at the heart of everything we do. We're committed to delivering products/services that meet or exceed our customers' expectations. Our team of experts uses rigorous testing, quality control measures, and continuous improvement processes to ensure that our products/services are of the highest quality. Our philosophy is to prioritize excellence in everything that we do, from the quality of solutions to the quality of customer service.</p>
                       </div>
-                      <div class="philosophy__tag__image philosophy__small col-md-6">
-                          <img class="even" src="{{ asset('img/images/ai_product2.jpg') }}" />
+                      <div class="philosophy__tag__image philosophy__small col-md-6 col-xs-12">
+                          <img class="even" src="{{ asset('img/images/ai_product2.jpg') }}"  style="width: 100%" />
                       </div>
                   </div>
                   <div class="philosophy__tag row">
-                      <div class="philosophy__tag__image philosophy__small col-md-6">
-                          <img class="odd" src="{{ asset('img/images/ai_product3.jpg') }}" />
+                      <div class="philosophy__tag__image philosophy__small col-md-6 col-xs-12">
+                          <img class="odd" src="{{ asset('img/images/ai_product3.jpg') }}"  style="width: 100%"/>
                       </div>
 
-                          <div class="clearfix"></div>
-                          <div class="philosophy__item__content col-md-6">
+                          <div class="philosophy__item__content col-md-6 col-xs-12">
                           <h1>Ethics</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Doing what's right, every time.</h3>
@@ -58,8 +55,7 @@
                   <div class="philosophy__tag row">
 
 
-                          <div class="clearfix"></div>
-                          <div class="philosophy__item__content col-md-6">
+                          <div class="philosophy__item__content col-md-6 col-xs-12">
                           <h1>Collaboration</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Working together for better results</h3>
@@ -67,8 +63,8 @@
                         <span></span>
                           <p>Collaboration is critical to the success of any IT services company. We encourage teamwork and collaboration both within the company and with our customers. We are open to feedback and suggestions from all stakeholders and work towards continuous improvement. Our team of experts work closely together to create innovative solutions that meet the unique needs of each client. We use cutting-edge tools and techniques to foster teamwork and communication, ensuring that everyone is working together towards a common goal. By leveraging the collective expertise of our team, we are able to deliver exceptional results for our clients</p>
                       </div>
-                      <div class="philosophy__tag__image philosophy__small col-md-6">
-                          <img class="even" src="{{ asset('img/images/ai_product4.jpg') }}"/>
+                      <div class="philosophy__tag__image philosophy__small col-md-6 col-xs-12">
+                          <img class="even" src="{{ asset('img/images/ai_product4.jpg') }}"  style="width: 100%"/>
                       </div>
                   </div>
               </div>
