@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
+        <link rel="stylesheet" href="{{ asset('css/variables.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ asset('css/remo.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/blog.css') }}" />
         @yield('custom_css')
 
         <title>Jkinda | Delivering Success</title>

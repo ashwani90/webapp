@@ -4,7 +4,7 @@
     margin-bottom: 2.5rem;
     font-size: 2.5rem;
     line-height: 3rem;
-    color: #000;
+    color: var(--bs-dark);;
     margin-left: 1rem;
 }
 
@@ -30,14 +30,14 @@
     line-height: 4rem;
     color: #000;
     padding-left: 1.5rem;
-    border-left: 3px solid #007aff;
+    border-left: 3px solid var(--bs-primary);;
 }
 
 .insight-text-container  h2:hover {
     cursor: pointer;
     text-decoration: underline;
-    -webkit-text-emphasis-color: darkgrey;
-            text-emphasis-color: darkgrey;
+    -webkit-text-emphasis-color: var(--bs-highlight);;
+            text-emphasis-color: var(--bs-highlight);;
 }
 
 .insight-text-container .subhead {
@@ -46,7 +46,7 @@
     font-size: 1.3rem;
     line-height: 1.5rem;
     letter-spacing: .05rem;
-    color: #747678;
+    color: var(--bs-dark);;
 }
 
 .insight-container-right {
@@ -79,14 +79,14 @@
     font-size: 2rem;
     line-height: 2rem;
     letter-spacing: .05rem;
-    color: #000;
+    color: var(--bs-dark);
 }
 
 .insight-text-container-right  h2:hover {
     cursor: pointer;
     text-decoration: underline;
-    -webkit-text-emphasis-color: darkgrey;
-            text-emphasis-color: darkgrey;
+    -webkit-text-emphasis-color: var(--bs-dark);
+            text-emphasis-color: var(--bs-dark);
 }
 
 .insight-text-container-right .subhead {
@@ -94,7 +94,7 @@
     font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: .05rem;
-    color: #747678;
+    color: var(--bs-dark);
 }
 
 .tag-container {
@@ -114,7 +114,7 @@
     line-height: 2rem;
     letter-spacing: 0.05rem;
     cursor: pointer;
-    border-left: 1px solid lightgray;
+    border-left: 1px solid var(--bs-dark);
 }
 
 .tag-container ul li b {
@@ -125,7 +125,7 @@
 
 .tag-container ul li.active {
     border-bottom: 1px solid lightgray;
-    color: grey;
+    color: var(--bs-dark);
 }
 
 .blog-container-text .subhead {
@@ -133,7 +133,7 @@
     font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: .05rem;
-    color: #747678;
+    color: var(--bs-dark);
 }
 
 .blog-item {
@@ -146,7 +146,7 @@
 }
 
 .blog-container-text h2 a {
-    color: #1e2222;
+    color: var(--bs-dark);
 }
 
 .blog-container-text  {
@@ -158,7 +158,7 @@
     font-size: 1rem;
     line-height: 1rem;
     letter-spacing: .15rem;
-    color: #1e2222;
+    color: var(--bs-dark);
     margin-bottom: .75rem;
     text-align: left;
     text-transform: uppercase;
@@ -171,8 +171,8 @@
 .blog-container-text  h2:hover {
     cursor: pointer;
     text-decoration: underline;
-    -webkit-text-emphasis-color: darkgrey;
-            text-emphasis-color: darkgrey;
+    -webkit-text-emphasis-color: var(--bs-dark);
+            text-emphasis-color: var(--bs-dark);
 }
 
 .blog-container-section {

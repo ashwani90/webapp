@@ -9,7 +9,7 @@ body {
 }
 .home-banner {
     padding: 1.5rem 0;
-    background-color: white;
+    background-color: var(--bs-white);
     font-family: Basis-regular
 }
 
@@ -106,7 +106,7 @@ body {
 .home-banner .home-banner-carousel .home-banner-slide .home-banner-box .home-banner-content .home-banner-title {
     font-size: 4rem;
     line-height: 4pc;
-    color: #fff;
+    color: var(--bs-white);
     margin-bottom: 1.5rem;
     font-family: Houschka-medium
 }
@@ -114,7 +114,7 @@ body {
 .home-banner .home-banner-carousel .home-banner-slide .home-banner-box .home-banner-content .home-banner-desc {
     font-size: 1.5rem;
     line-height: 40px;
-    color: #c9c9ce;
+    color: var(--bs-highlight);
     margin-bottom: 2.5rem;
     font-family: Basis-regular;
     opacity: 0
@@ -176,7 +176,7 @@ body {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 25px;
-    background-color: #000;
+    background-color: var(--bs-dark);
     position: absolute;
     content: "";
     z-index: 2;
@@ -235,7 +235,7 @@ body {
     transform: scale(1);
     transition: transform .1s ease-in-out;
     transition-delay: 1.2s;
-    border: 1px solid #000
+    border: 1px solid var(--bs-dark);
 }
 
 .home-banner .home-banner-carousel .home-banner-slider.swiper-slide-active .image-video-box img.zoom-out {
@@ -246,7 +246,7 @@ body {
 }
 
 .home-banner .home-banner-carousel .home-banner-slider.swiper-slide-active .home-banner-progress-bar {
-    background: linear-gradient(102.57deg,#d0121e,#e41175 100%,#e41175 0);
+    background: linear-gradient(102.57deg,var(--bs-primary),var(--bs-primary-alpha) 100%,var(--bs-primary-beta) 0);
     height: 2px;
     width: 0;
     bottom: 0
@@ -326,7 +326,7 @@ body {
     font-size: 1rem;
     line-height: 24px;
     letter-spacing: .15em;
-    color: #fff
+    color: var(--bs-white);
 }
 
 .home-banner .swiper-slide-active .circle-box {
@@ -564,7 +564,7 @@ body {
 }
 
 .section-bg-dark .author-detail .author-quote-cta,.section-bg-dark .author-detail .quote-inner-content-heading,.section-bg-dark .author-detail .quote-inner-content-para,.section-bg-dark .swiper-pagination-current {
-    color: #fff!important
+    color: var(--bs-white)!important
 }
 .quote-card-section .swiper-slide-prev .author-detail,.quote-card-section .swiper-slide-prev .quote-heading {
     overflow: hidden!important
@@ -587,7 +587,7 @@ body {
     background-size: cover;
     text-align: center;
     font-size: 18px;
-    background: #000
+    background: var(--bs-dark)
 }
 
 .hero-carousel-main-container .hero-carousel-item-active .hero-carousel-content,.hero-carousel-main-container .hero-carousel-item.active .hero-carousel-content,.hero-carousel-main-container .swiper-slide-active .hero-carousel-content,.hero-carousel-main-container .swiper-slide-duplicate-active .hero-carousel-content,.hero-carousel-main-container .swiper-slide-duplicate.active .hero-carousel-content,.hero-carousel-main-container .swiper-slide.active .hero-carousel-content {
@@ -608,10 +608,10 @@ body {
 }
 
 .tcs-primary-btn {
-    background: linear-gradient(102.57deg,#d0121e,#e41175 100%,#e41175 0);
+    background: linear-gradient(102.57deg,var(--bs-primary),var(--bs-primary-alpha) 100%,var(--bs-primary-beta) 0);
     border-radius: 6.25rem;
     font-size: 1.125rem;
-    color: #fff;
+    color: var(--bs-white);
     letter-spacing: .03125rem;
     padding: 9pt 2pc;
     font-family: Basis-regular;
@@ -619,9 +619,9 @@ body {
 }
 
 .tcs-primary-btn:focus,.tcs-primary-btn:hover {
-    background: linear-gradient(102.57deg,#e41175,#d0121e);
+    background: linear-gradient(102.57deg,var(--bs-primary),var(--bs-primary-alpha));
     transition: all .5s;
     text-decoration: none;
-    color: #fff
+    color: var(--bs-white);
 }
 

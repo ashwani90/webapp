@@ -13,9 +13,9 @@
     <div class="container-fluid">
         <div class="row">
             @foreach($capabilities as $caps)
-            <div class="col-xxl-3 col-lg-4 col-md-6">
+            <div class="col-xxl-4 col-lg-4 col-md-6">
     <div class="whats_container">
-    <div class=" whatsNew_card whatsNew_card-service whatsNew_orange h-100 card">
+    <div class=" whatsNew_card whatsNew_card_big whatsNew_card-service whatsNew_orange card">
         <div class="whatsNew_icon text-center mb-4">
             <img alt="" loading="lazy" width="95" height="95" decoding="async" data-nimg="1" srcset="{{$caps['image']}}" style="color: transparent;">
         </div>
@@ -35,36 +35,61 @@
         </div>
 
          </div>
-         <div class="service__apply">
+         <div class="service__apply text-head">
             <h1>Implementing Technology Solutions for Projects</h1>
             @include('components.works')
         </div>
          </div>
 <!-- "Utilize object detection within floor plans to seamlessly capture and categorize data for streamlined pipeline integration -->
          <div class="service__insights">
-            <h1>Insights</h1>
+            <h1 class="text-head">Insights</h1>
             <div class="container">
             <div class="service__insights__items row">
-                <div class="service__insights__items__item col-md-3">
-                    <img src="./img/logo-green-1x.png"/>
-                    <h3>Company Name</h3>
-                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+            <div class="blog__container row p-4">
+                <div class="col-md-3 blog-item">
+                <img src="{{ asset('/img/products/ai_news.jpeg') }}" height="40%" width="100%" />
+                <!-- <img class="blog-image" src="./img/images/ai_generated.png" /> -->
+                <div class="blog-container-text">
+                    <span class="category-text">Javascript</span>
+                      <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                        <span class="subhead">
+                        Ashwani | Dec 24 2023
+                        </span>
+                    </div>
                 </div>
-                <div class="service__insights__items__item col-md-3">
-                    <img src="./img/logo-green-1x.png"/>
-                    <h3>Company Name</h3>
-                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                <div class="col-md-3 blog-item">
+                  <img src="{{ asset('/img/products/ocr.jpeg') }}" height="40%" width="100%" />
+                  <div class="blog-container-text">
+                    <span class="category-text">Javascript</span>
+                    <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                      <span class="subhead">
+                      Ashwani | Dec 24 2023
+                      </span>
+                  </div>
                 </div>
-                <div class="service__insights__items__item col-md-3">
-                    <img src="./img/logo-green-1x.png"/>
-                    <h3>Company Name</h3>
-                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                <div class="col-md-3 blog-item">
+                  <img src="{{ asset('/img/products/predict.jpeg') }}" height="40%" width="100%" />
+                  <!-- <img class="blog-image" src="./img/images/ai_generated.png" /> -->
+                  <div class="blog-container-text">
+                      <span class="category-text">Javascript</span>
+                    <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                      <span class="subhead">
+                      Ashwani | Dec 24 2023
+                      </span>
+                  </div>
                 </div>
-                <div class="service__insights__items__item col-md-3">
-                    <img src="./img/logo-green-1x.png"/>
-                    <h3>Company Name</h3>
-                    <span>uspendisse potenti. Fusce vel hendrerit felis. Praesent nibh justo, vehicula sed ex sit amet, auctor ultricies sem. Nunc non fringilla mi</span>
+                <div class="col-md-3 blog-item">
+                  <img src="{{ asset('/img/products/book.jpeg') }}" height="40%" width="100%" />
+                  <!-- <img class="blog-image" src="./img/images/ai_generated.png" /> -->
+                  <div class="blog-container-text">
+                      <span class="category-text">Javascript</span>
+                    <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                      <span class="subhead">
+                      Ashwani | Dec 24 2023
+                      </span>
+                  </div>
                 </div>
+              </div>
             </div>
             </div>
          </div>

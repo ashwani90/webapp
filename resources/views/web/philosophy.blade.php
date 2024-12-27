@@ -7,8 +7,7 @@
                         <img class="odd" src="./img/nat-6.jpg" height="400px" width="400px"/>
                     </div>
 
-                        <div class="clearfix"></div>
-                        <div class="philosophy__item__content col-md-6">
+                        <div class="service-text-container col-md-6">
                         <h2>Ai Automated Newspaper</h2>
                         <h6>The newspaper compoent that is automated</h6>
                         <span></span>

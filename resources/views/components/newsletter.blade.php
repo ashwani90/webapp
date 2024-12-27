@@ -1,6 +1,6 @@
 <div class="newsletter">
 
-        <img class="newsletter-image" src="{{ $data['newsletter_image'] ?? './img/images/ai_product4.jpg' }}" alt="nature images"/>
+        <img class="newsletter-image" src="{{ $data['newsletter_image'] ?? './img/products/meeting.webp' }}" alt="nature images"/>
 
         <div class="text-container">
             <form name="email-signup" class="enable-analytics" data-form-name="stay-in-the-know.newsletter-subscription-form" data-form-type="Subscription Form">
@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-xl-4 order-3 order-lg-3 order-xl-1 email-button-wrapper loader-hide-button">
-                                <button disabled="" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Register</button>
+                                <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Register</button>
                             </div>
                             <!-- Loader button -->
                             <div class="col-12 col-xl-4 order-3 order-lg-3 order-xl-1 loader-button-wrapper d-none">

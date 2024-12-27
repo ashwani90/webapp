@@ -1,0 +1,12 @@
+html, body {
+    --bs-primary: #008080;
+    --bs-secondary-i: #FFA07A;
+    --bs-dark: #4A4A4A;
+    --bs-white: #FFFFFF;
+    --bs-highlight: #EAEAEA;
+    --bs-primary-alpha: #00808080;
+    --bs-primary-beta: #00808060;
+    --bs-secondary-alpha-light: #FFA07A20;
+    --bs-secondary-alpha-dark: #FFA07A80;
+}
+

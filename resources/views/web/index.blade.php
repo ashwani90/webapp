@@ -13,8 +13,7 @@
                       <div class="philosophy__tag__image philosophy__small col-md-6 col-xs-12">
                           <img class="odd" src="{{ asset('img/images/ai_product1.jpg') }}" style="width: 100%"/>
                       </div>
-
-                          <div class="philosophy__item__content col-md-6 col-xs-12">
+                      <div class="service-text-container-1 col-md-6 col-xs-12">
                           <h1>Customer Centric</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Empowering your business, one solution at a time</h3>
@@ -26,7 +25,7 @@
                   <div class="philosophy__tag row">
 
 
-                          <div class="philosophy__item__content col-md-6 col-xs-12">
+                          <div class="service-text-container-1 col-md-6 col-xs-12">
                           <h1>Innovation</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Excellence in every detail.</h3>
@@ -43,7 +42,7 @@
                           <img class="odd" src="{{ asset('img/images/ai_product3.jpg') }}"  style="width: 100%"/>
                       </div>
 
-                          <div class="philosophy__item__content col-md-6 col-xs-12">
+                          <div class="service-text-container-1 col-md-6 col-xs-12">
                           <h1>Ethics</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Doing what's right, every time.</h3>
@@ -55,7 +54,7 @@
                   <div class="philosophy__tag row">
 
 
-                          <div class="philosophy__item__content col-md-6 col-xs-12">
+                          <div class="service-text-container-1 col-md-6 col-xs-12">
                           <h1>Collaboration</h1>
                           <div class="philosophy__item__content-secondary">
                           <h3>Working together for better results</h3>
@@ -79,87 +78,55 @@
           </section>
 
           <section>
-            <div class="blog__title">
-              Blogs
-            </div>
-            <div class="blog__container row p-4">
-            <div class="blog__card item__1  col-md-6 p-4">
-              <div class="blog__card__item">
-                <div class="blog__hover">
-                  <h6>Jkinda Web</h6>
-                  <span> Aug 24, 2023</span>
-                  <span>React New thing</span>
-                </div>
+              <div class="blog__title">
+                Blogs
+              </div>
+              <div class="blog__container row p-4">
+                <div class="col-md-3 blog-item">
                 <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
-                <div class="blog__head">
-                  <h2>Yolo</h2>
-                  <span></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet, sed bibendum mauris rutrum. Donec posuere facilisis mauris, at sollicitudin libero ullamcorper sed. Sed mauris orci, aliquam vel mollis sit amet, sodales auctor nisl. Aliquam leo urna, </p>
-                  <div class="read_more_link">
-                  <a href="#">Read More</a>
+                <!-- <img class="blog-image" src="./img/images/ai_generated.png" /> -->
+                <div class="blog-container-text">
+                    <span class="category-text">Javascript</span>
+                      <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                        <span class="subhead">
+                        Ashwani | Dec 24 2023
+                        </span>
+                    </div>
                 </div>
+                <div class="col-md-3 blog-item">
+                  <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
+                  <div class="blog-container-text">
+                    <span class="category-text">Javascript</span>
+                    <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                      <span class="subhead">
+                      Ashwani | Dec 24 2023
+                      </span>
+                  </div>
                 </div>
-
-            </div>
-            </div>
-            <div class="blog__card item__1  col-md-6 p-4">
-              <div class="blog__card__item">
-                <div class="blog__hover">
-                  <h6>John Doe</h6>
-                  <span> Aug 24, 2023</span>
-                  <span>Learn Code CSS</span>
+                <div class="col-md-3 blog-item">
+                  <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
+                  <!-- <img class="blog-image" src="./img/images/ai_generated.png" /> -->
+                  <div class="blog-container-text">
+                      <span class="category-text">Javascript</span>
+                    <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                      <span class="subhead">
+                      Ashwani | Dec 24 2023
+                      </span>
+                  </div>
                 </div>
-                <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
-                <div class="blog__head">
-                <h2>Google</h2>
-                <span></span>
-                <p>Mauris sit amet consectetur massa. Vivamus fermentum urna at scelerisque ultricies. Etiam aliquam imperdiet felis, molestie facilisis sem congue a. Pellentesque pharetra fermentum ipsum quis consequat. In commodo quis urna eu ornare. Suspendisse justo mauris, sollicitudin vitae bibendum ut, pretium non turpis. </p>
-                <div class="read_more_link">
-                  <a href="#">Read More</a>
+                <div class="col-md-3 blog-item">
+                  <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
+                  <!-- <img class="blog-image" src="./img/images/ai_generated.png" /> -->
+                  <div class="blog-container-text">
+                      <span class="category-text">Javascript</span>
+                    <h2><a  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum justo sed eros aliquet,</a></h2>
+                      <span class="subhead">
+                      Ashwani | Dec 24 2023
+                      </span>
+                  </div>
                 </div>
               </div>
-
-            </div>
-            </div>
-            <div class="blog__card item__1  col-md-6 p-4">
-              <div class="blog__card__item">
-                <div class="blog__hover">
-                  <h6>John Doe</h6>
-                  <span> Aug 24, 2023</span>
-                  <span>Learn Code CSS</span>
-                </div>
-                <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
-                <div class="blog__head">
-              <h2>Apple</h2>
-              <span></span>
-              <p>liquam pharetra diam quis viverra auctor. Fusce imperdiet dignissim est, eu vestibulum sapien facilisis nec. Vestibulum ac augue tincidunt nisi venenatis lobortis nec sed eros. Maecenas et ligula dolor.</p>
-              <div class="read_more_link">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-
-            </div>
-            </div>
-            <div class="blog__card item__1  col-md-6 p-4">
-              <div class="blog__card__item">
-                <div class="blog__hover">
-                  <h6>John Doe</h6>
-                  <span> Aug 24, 2023</span>
-                  <span>Learn Code CSS</span>
-                </div>
-                <img src="{{ asset('img/hero.jpg') }}" height="40%" width="100%" />
-              <div class="blog__head">
-                <h2>Microsoft</h2>
-                <span></span>
-                <p>Sed nec ex nisl. Nam varius, magna ut tincidunt feugiat, urna nulla tincidunt sapien, vitae finibus leo est sit amet diam. Quisque iaculis, lacus ac imperdiet pulvinar, ante dui sagittis nulla, at hendrerit nunc magna non nisi. Phasellus tempor odio a urna tincidunt, id dapibus turpis efficitur. Ut faucibus, mauris at venenatis lacinia, </p>
-                <div class="read_more_link">
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-
-            </div>
-            </div>
-          </div>
+              
           </section>
 
             <section>

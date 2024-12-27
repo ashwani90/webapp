@@ -10,8 +10,9 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
     <div class="carousel-caption d-none d-md-block">
-        <h5>Empower Your Evolution: Transform with AI</h5>
-        <p>Unlock the potential of AI to propel your evolution forward. Embrace transformative technologies for a future empowered by innovation.</p>
+    
+        <span class="carousel-primary-head">Empower Your Evolution</span>
+        <span class="carousel-secondary-head">Unlock the potential of AI to propel your evolution forward</span>
         <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
@@ -20,9 +21,9 @@
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">
-    <h5>Elevate Your Experience: Upgrade Your Software Today</h5>
-        <p>Enhance efficiency and elevate performance with our customized software solutions. Elevate your experience and stay ahead in today's competitive landscape by upgrading your software now.</p>
-        <div>
+    <span class="carousel-primary-head">Elevate Your Experience</span>
+    <span class="carousel-secondary-head">Enhance efficiency and elevate performance with our customized software solutions</span>
+    <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
       </div>
@@ -30,9 +31,9 @@
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">
-    <h5>Maximize Efficiency, Optimize Performance</h5>
-        <p>Unlock peak productivity with our solutions designed to maximize efficiency and optimize performance, empowering you to achieve your goals with precision and effectiveness</p>
-        <div>
+    <span class="carousel-primary-head">Maximize Efficiency</span>
+    <span class="carousel-secondary-head">Unlock peak productivity with our solutions designed to maximize efficiency and optimize performance</span>
+    <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
       </div>
@@ -40,9 +41,9 @@
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">
-    <h5>Tailored Solutions, Crafted for Your Success </h5>
-        <p>Discover bespoke software solutions meticulously designed to elevate your business outcomes. Experience innovation tailored precisely to your needs for unparalleled success.</p>
-        <div>
+    <span class="carousel-primary-head">Tailored Solutions</span>
+    <span class="carousel-secondary-head">Discover bespoke software solutions meticulously designed to elevate your business outcomes</span>
+    <div>
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
       </div>

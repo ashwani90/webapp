@@ -1,7 +1,7 @@
 <div class="services-container">
     <div class="container-fluid">
         <div class="row">
-<div class="col-xxl-3 col-lg-4 col-md-6">
+<div class="col-xxl-3 col-lg-3 col-md-6">
     <div class="whats_container">
     <div class="whatsNew_card whatsNew_orange h-100 card">
         <div class="whatsNew_icon text-center mb-4">
@@ -12,7 +12,7 @@
     </div>
 </div>
 </div>
-<div class="col-xxl-3 col-lg-4 col-md-6 ">
+<div class="col-xxl-3 col-lg-3 col-md-6 ">
 <div class="whats_container">
     <div class="whatsNew_card whatsNew_orange h-100 card">
         <div class="whatsNew_icon text-center mb-4">
@@ -23,7 +23,7 @@
     </div>
     </div>
 </div>
-<div class="col-xxl-3 col-lg-4 col-md-6 ">
+<div class="col-xxl-3 col-lg-3 col-md-6 ">
 <div class="whats_container">
     <div class="whatsNew_card whatsNew_orange h-100 card">
         <div class="whatsNew_icon text-center mb-4">
@@ -34,7 +34,7 @@
     </div>
     </div>
 </div>
-<div class="col-xxl-3 col-lg-4 col-md-6 ">
+<div class="col-xxl-3 col-lg-3 col-md-6 ">
 <div class="whats_container">
     <div class="whatsNew_card whatsNew_orange h-100 card">
         <div class="whatsNew_icon text-center mb-4">
@@ -45,7 +45,7 @@
     </div>
     </div>
 </div>
-<div class="col-xxl-3 col-lg-4 col-md-6 ">
+<div class="col-xxl-3 col-lg-3 col-md-6 ">
 <div class="whats_container">
     <div class="whatsNew_card whatsNew_orange h-100 card">
         <div class="whatsNew_icon text-center mb-4">
@@ -56,7 +56,7 @@
     </div>
     </div>
 </div>
-<div class="col-xxl-3 col-lg-4 col-md-6 ">
+<div class="col-xxl-3 col-lg-3 col-md-6 ">
     <div class="whats_container">
     <div class="whatsNew_card whatsNew_orange h-100 card">
         <div class="whatsNew_icon text-center mb-4">

@@ -5,7 +5,7 @@
 
     <a href="" class="cta-link-focus tcs-card-click">
         <div class="hot-card position-relative">
-            <div class="whats-hot-card-img"  data-device-bg-src="/content/dam/global-tcs/en/images/home/insights-by-interest/stay-up-to-date-latest-tcs-news.jpg" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/ai_newspaper.png");'></div>
+            <div class="whats-hot-card-img"  data-device-bg-src="/" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/ai_news.jpeg");'></div>
             <div class="hot-card-tags position-absolute p-4 w-100">
                 <span class="tag-list  rounded-pill text-decoration-none">AI Newspaper</span>
             </div>
@@ -27,7 +27,7 @@
 
     <a href="" class="cta-link-focus tcs-card-click">
         <div class="hot-card position-relative">
-            <div class="whats-hot-card-img"  data-device-bg-src="/content/dam/global-tcs/en/images/home/insights-by-interest/stay-up-to-date-latest-tcs-news.jpg" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/ocr.jpeg");'></div>
+            <div class="whats-hot-card-img"  data-device-bg-src="" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/ocr.jpeg");'></div>
             <div class="hot-card-tags position-absolute p-4 w-100">
                 <span class="tag-list  rounded-pill text-decoration-none">Ocr</span>
             </div>
@@ -49,7 +49,7 @@
 
     <a href="" class="cta-link-focus tcs-card-click">
         <div class="hot-card position-relative">
-            <div class="whats-hot-card-img" data-device-bg-src="/content/dam/global-tcs/en/images/home/insights-by-interest/stay-up-to-date-latest-tcs-news.jpg" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/predict.webp");'></div>
+            <div class="whats-hot-card-img" data-device-bg-src="" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/predict.jpeg");'></div>
             <div class="hot-card-tags position-absolute p-4 w-100">
                 <span class="tag-list  rounded-pill text-decoration-none">Predict Stock</span>
             </div>
@@ -71,7 +71,7 @@
 
     <a href="" class="cta-link-focus tcs-card-click">
         <div class="hot-card position-relative">
-            <div class="whats-hot-card-img" data-device-bg-src="/content/dam/global-tcs/en/images/home/insights-by-interest/stay-up-to-date-latest-tcs-news.jpg" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/meeting.webp");'></div>
+            <div class="whats-hot-card-img" data-device-bg-src="" data-lazy-load="" data-loaded="true" style='background-image: url("/img/products/book.jpeg");'></div>
             <div class="hot-card-tags position-absolute p-4 w-100">
                 <span class="tag-list  rounded-pill text-decoration-none">Chatbot</span>
             </div>
