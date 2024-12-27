@@ -654,7 +654,8 @@ body {
   right: 0;
   transform: translate(40rem);
   opacity: 0;
-  background-image: radial-gradient(var(--bs-primary), var(--bs-dark));
+  /* background-color: var(--bs-primary); */
+  background-image: linear-gradient(var(--bs-dark), var(--bs-primary), var(--bs-primary-dark), var(--bs-dark)); 
   z-index: 1000;
   transition: all .4s ease-in; }
   @media (max-width: 56.25em) {
@@ -1115,7 +1116,8 @@ body {
     border: none; }
 
     .product__item__list {
-        font-size: larger;
+        font-size: 1.3rem;
         color: var(--bs-dark);
+        font-weight: 200;
     }
 

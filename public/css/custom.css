@@ -321,6 +321,7 @@ pre {
     letter-spacing: .5rem;
     line-height: 1rem;
     font-weight: 400;
+    color: var(--bs-secondary-i);
 }
 
 .image-content .divider {
@@ -345,6 +346,7 @@ pre {
     font-size: 2rem;
     line-height: 1.5rem;
     font-weight: 400;
+    color: var(--bs-primary);
 }
 
 

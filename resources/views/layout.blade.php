@@ -28,7 +28,7 @@
                 <span class="navigation__icon">&nbsp;</span>
             </label>
 
-            <!-- <div class="navigation__background">&nbsp;</div> -->
+            <div class="navigation__background">&nbsp;</div>
 
             <nav class="navigation__nav navigation__background">
                 <ul class="navigation__list">
