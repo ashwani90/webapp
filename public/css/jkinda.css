@@ -463,21 +463,21 @@ a {
     font-size: 4rem;
     letter-spacing: .3rem;
     line-height: 2rem;
-    font-weight: 400;
+    font-weight: 800;
     text-align: left;
-    color: var(--bs-secondary-i);
+    color: var(--bs-white);
+    font-family: Houschka-medium;
     
-    font-family: Basis-regular
 }
 
 .carousel-secondary-head {
     margin-top: 4rem;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
-    font-weight: 800;
+    font-weight: 200;
     text-align: left;
-    font-family: Houschka-medium;
+    font-family: Basis-regular;
     color: var(--bs-highlight);
    
 }
@@ -521,7 +521,7 @@ span.carousel-primary-head, span.carousel-secondary-head {
       font-weight: 800;
       font-size: 3rem;
       line-height: 3rem;
-      color: var(--bs-secondary-i);
+      color: var(--bs-dark);
       font-family: Houschka-medium;
       margin-bottom: 1rem; }
 
@@ -559,7 +559,8 @@ span.carousel-primary-head, span.carousel-secondary-head {
     }
 
     .service-text-container-1  h1 {
-        color: var(--bs-secondary-i);
+        color: var(--bs-dark);
+        font-size: 2rem;
     }
     
     .service-text-container-1 h3 {

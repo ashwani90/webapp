@@ -339,6 +339,7 @@ pre {
     letter-spacing: .3rem;
     line-height: 2rem;
     font-weight: 400;
+    color: var(--bs-primary);
 }
 .image-content .secondary-head {
     margin-top: 4rem;
@@ -346,7 +347,7 @@ pre {
     font-size: 2rem;
     line-height: 1.5rem;
     font-weight: 400;
-    color: var(--bs-primary);
+    
 }
 
 
