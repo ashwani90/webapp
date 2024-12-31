@@ -178,4 +178,31 @@
 
 .blog-container-section {
     margin-bottom: 40px;
+
+}
+.blog-container-section nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.blog-container-section nav  ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+    height: 40px;
+}
+
+.blog-container-section nav  ul li .page-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--bs-primary);
+
+}
+
+.blog-container-section nav  ul li.page-item.active .page-link {
+    background-color: var(--bs-primary);
+    color: white;
 }
