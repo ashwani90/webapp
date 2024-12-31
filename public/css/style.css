@@ -585,15 +585,11 @@ body {
       font-size: 18px;
       font-weight: 800; }
     .footer__links_subs button {
-      width: 170px;
+      width: 140px;
       padding: 10px;
       border-style: none;
-      background-color: var(--bs-primary);
-      border-radius: 10px;
       margin-left: 10px;
-      margin-top: 20px;
-      color: var(--bs-white);
-      font-size: 16px; }
+      margin-top: 15px; }
   .footer__email__input {
     margin: 10px;
     padding: 10px 30px;
@@ -655,7 +651,7 @@ body {
   transform: translate(40rem);
   opacity: 0;
   /* background-color: var(--bs-primary); */
-  background-image: linear-gradient(var(--bs-dark), var(--bs-primary), var(--bs-primary-dark), var(--bs-dark)); 
+  background-image: linear-gradient(var(--bs-dark), var(--bs-primary), var(--bs-primary-dark), var(--bs-dark));
   z-index: 1000;
   transition: all .4s ease-in; }
   @media (max-width: 56.25em) {
@@ -785,7 +781,7 @@ body {
           z-index: 1;
           transform: scale(1.1);
           border: 3px solid var(--bs-primary); }
-    
+
 
 .philosophy__small {
   height: 300px; }

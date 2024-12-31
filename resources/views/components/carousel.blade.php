@@ -1,5 +1,5 @@
 <section class="own-carousel">
-    
+
   <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -10,7 +10,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
     <div class="carousel-caption d-none d-md-block">
-    
+
         <span class="carousel-primary-head">Empower Your Evolution</span>
         <span class="carousel-secondary-head">Unlock the potential of AI to propel your evolution forward</span>
         <div>
@@ -27,7 +27,7 @@
         <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
         </div>
       </div>
-      <img src="{{ asset('img/images/ai_generated1.jpg') }}" class="d-block w-100" alt="...">
+      <img src="{{ asset('img/images/aigenerated1.jpeg') }}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
     <div class="carousel-caption d-none d-md-block">

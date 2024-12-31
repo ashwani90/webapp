@@ -49,7 +49,7 @@
               <div class="col-md-3 footer__details d-flex flex-column justify-content-around">
                 <div class="footer__company">
                 <img alt="" loading="lazy" width="70" height="50" decoding="async" data-nimg="1" src="./img/jkinda_logo.png" style="color: transparent;">
-                  
+
                 </div>
                 <div class="footer__about">
                   <h2>About Us</h2>
@@ -83,7 +83,7 @@
                 <div  class="footer__links_subs">
                 <h2>Subscribe for more info</h2>
                 <input type="email" class="footer__email__input" />
-                <button class="footer_email_btn">Subscribe</button>
+                <button class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Subscribe</button>
                </div>
               </div>
               <span class="footer__bottom-line"></span>

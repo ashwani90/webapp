@@ -2,10 +2,21 @@
 @section('section')
 @include('components.header-image')
 <section class="service">
-         <div class="service__desc">
+    <div class="container">
+<div class="service-intro-row row">
+        <div class="col-md-6" style="text-align: justify;">
+            <div class="service-text-container">
             <h1>{{$data['main_heading']}}</h1>
             <p>{{$data['main_description']}}</p>
-         </div>
+            </div>
+        </div>
+        <div class="col-md-6 service-image-container">
+        <img src="http://localhost:8000/img/images/business.jpg">
+        </div>
+    </div>
+    <hr />
+</div>
+
 
          <div class="service__work">
             <h1>Our Capabilities: Empowering Your Vision</h1>

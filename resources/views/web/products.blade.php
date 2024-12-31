@@ -5,9 +5,9 @@
             <div class="product">
                 <div class="product__item pt-2">
                     <div class="product__item__images col-md-6">
-                        <img class="product__item__images__item1" src="img/products/chatbot1.png"/>
-                        <img class="product__item__images__item2" src="img/products/chatbpt2.png"/>
-                        <img class="product__item__images__item3" src="img/products/chatbot3.png"/>
+                        <img class="product__item__images__item1" width="300px" height="200x" src="img/products/chatbot_1.jpeg"/>
+                        <img class="product__item__images__item2" width="300px" height="200x" src="img/products/chatbot_2.jpeg"/>
+                        <img class="product__item__images__item3" width="300px" height="200x" src="img/products/chatbot_3.jpeg"/>
                     </div>
                     <div class="clearfix"></div>
                     <div class="product__item__text col-md-6">
@@ -51,16 +51,16 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="product__item__images col-md-6">
-                        <img class="product__item__images__item1" src="img/nat-1.jpg"/>
-                        <img class="product__item__images__item2" src="img/nat-2.jpg"/>
-                        <img class="product__item__images__item3" src="img/nat-3.jpg"/>
+                        <img class="product__item__images__item1" width="300px" height="200x" src="img/products/ai_news.jpeg"/>
+                        <img class="product__item__images__item2" width="300px" height="200x" src="img/products/ai_news1.jpeg"/>
+                        <img class="product__item__images__item3" width="300px" height="200x" src="img/products/ai_news2.jpeg"/>
                     </div>
                 </div>
                 <div class="product__item">
                     <div class="product__item__images col-md-6">
-                        <img class="product__item__images__item1" src="img/nat-1.jpg"/>
-                        <img class="product__item__images__item2" src="img/nat-2.jpg"/>
-                        <img class="product__item__images__item3" src="img/nat-3.jpg"/>
+                        <img class="product__item__images__item1" width="300px" height="200x" src="img/products/ocr_5.jpeg"/>
+                        <img class="product__item__images__item2" width="300px" height="200x" src="img/products/ocr_6.jpeg"/>
+                        <img class="product__item__images__item3" width="300px" height="200x" src="img/products/ocr_7.jpeg"/>
                     </div>
                     <div class="clearfix"></div>
                     <div class="product__item__text col-md-6">
