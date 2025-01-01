@@ -5,7 +5,7 @@
         <div class="text-container-know text-container-know-form">
             <span class="small-head">Submit Your Query</span>
             <div class="text-container">
-            <form name="email-signup" class="enable-analytics" data-form-name="stay-in-the-know.newsletter-subscription-form" data-form-type="Subscription Form">
+            <form id="contact-form" name="email-signup" class="enable-analytics" data-form-name="stay-in-the-know.newsletter-subscription-form" data-form-type="Subscription Form">
                 <div class="signup-right-content-inner-section">
                     <div class="signup-form-section">
                         <div class="row loader-outer">
@@ -31,16 +31,17 @@
                                 </div>
                             <div class="col-md-12 col-xl-12 mt-3">
                                 <div class="form-element-textarea form-element-error">
-                                     <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Your message"></textarea>
+                                     <textarea class="form-control" id="text-value" name="textVal" rows="3" placeholder="Your message"></textarea>
                                 </div>
                             </div>
 
                             </div>
                             <div class="col-12 mt-4 col-xl-4 order-3 order-lg-3 order-xl-1 email-button-wrapper loader-hide-button">
-                                <button  type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Register</button>
+                                <button  type="submit" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Register</button>
                             </div>
                         </div>
                         <p class="sigunup-form-common-error-text"></p>
+                        <span style="margin-top: 20px;" id="responseContact"></span>
                     </div>
                     <!-- Thank you Box -->
                     <div class="email-signup-thankyou-box d-none" tabindex="0">

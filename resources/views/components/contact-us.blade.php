@@ -10,10 +10,10 @@
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
                                     <span class="text-extra-dark-gray text-extra-medium-custom d-block alt-font font-weight-500">How can we help you?</span>
-                                    <a id="custom-a-tag" href="mailto:info@rhizomespace.com" class="alt-font ">Send us an email</a>
+                                    <a id="custom-a-tag" href="mailto:jkindaat@gmail.com" class="alt-font ">Send us an email</a>
                                 </div>
                                 <div id="custom-lower-span" class="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                                    <span>info@rhizomespace.com</span>
+                                    <span>jkindaat@gmail.com</span>
                                 </div>
                             </div>
                             <div class="feature-box-overlay"></div>
@@ -32,7 +32,7 @@
                                     <a id="custom-a-tag" href="#" class="alt-font ">Give us a call toady</a>
                                 </div>
                                 <div id="custom-lower-span" class="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                                    <span>India - +91 9873808707 </apan>
+                                    <span>India - +91 9719820967 </apan>
                                 </div>
                             </div>
                             <div class="feature-box-overlay"></div>
@@ -47,11 +47,11 @@
                                 <img alt="Cloud Infrastructure" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" src="./img/svg/customer-service.svg" style="color: transparent;">
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
-                                    <span class="text-extra-dark-gray text-extra-medium-custom d-block alt-font font-weight-500">Want to work with us?</span>
-                                    <a id="custom-a-tag" href="mailto:info@rhizomespace.com" class="alt-font ">Mail your resume</a>
+                                    <span class="text-extra-dark-gray text-extra-medium-custom d-block alt-font font-weight-500">Want to know our Products?</span>
+                                    <a id="custom-a-tag" href="mailto:jkindaat@gmail.com" class="alt-font ">Schedule a Demo</a>
                                 </div>
                                 <div id="custom-lower-span" class="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                                    <span>info@rhizomespace.com</span>
+                                    <span>jkindaat@gmail.com</span>
                                 </div>
                             </div>
                             <div class="feature-box-overlay"></div>

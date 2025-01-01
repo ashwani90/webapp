@@ -23,7 +23,9 @@ Route::get('/services', [ MainController::class, 'services' ])->name("services")
 Route::get('/blogs', [ MainController::class, 'blogs' ])->name("blogs");
 Route::get('/{locale}/blog/', [ BinshopController::class, 'index' ])->name("binshopsblog.index");
 Route::get('/{locale}/blog/{blogPostSlug}', [ BinshopController::class, 'viewSinglePost' ])->name("binshopsblog.single");
-
+Route::post('/{locale}/save_comment/{blogPostSlug}',
+                [ BinshopController::class, 'addNewComment' ])
+                ->name('binshopsblog.comments.add_new_comment');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

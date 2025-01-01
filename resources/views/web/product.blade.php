@@ -9,26 +9,22 @@
                     <span class="product__desc-s">{{$data['intro_desc']}}</span>
                     <div class="product__get__started">
                         <span>Lets get started</span>
+                        <div class="row">
+                        <span style="margin-top: 20px; margin-bottom: -40px; font-size: 1.4rem;" id="responseSt"></span>
+                        </div>
                         <div class="container-fluid row loader-outer" style="margin-top: 30px;">
                             <div class="col-12 col-xl-8">
+
                                 <div class="form-element form-element-error">
-
-
-
                                      <input autocomplete="off" id="emailSignupId" type="text" maxlength="250" name="emailId" class="form-control email-check position-relative email-signup-input-field msg-tooltip" placeholder="Get Started" aria-describedby="inputEmailSignUpError"> <span class="email-signup-mail-icon position-absolute" title="Email"><span class="sr-only">Email</span></span>
                                 </div>
+
                             </div>
+
                             <div class="col-12 col-xl-4 order-3 order-lg-3 order-xl-1 email-button-wrapper loader-hide-button">
-                                <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Get Started</button>
+                                <button id="get_started" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Get Started</button>
                             </div>
-                            <!-- Loader button -->
-                            <div class="col-12 col-xl-4 order-3 order-lg-3 order-xl-1 loader-button-wrapper d-none">
-                                <div class="loader-button-visible-text" tabindex="-1">
-                                    <button disabled="" type="submit" class="d-grid btn loader-button px-3" aria-hidden="true">
-                                        <span class="spinner">Sending... <i class="loader-spin"></i></span>
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
                         <!-- <div class="product__get__started-btns">
                             <input type="email" placeholder="Get Demo"/>
@@ -73,8 +69,7 @@
             <div class="subs__container">
                 <h1>What can we help you with</h1>
                 <div class="subs__container-btns">
-                    <button class="subs__container-btns-contact">Work with us</button>
-                    <button class="subs__container-btns-job">Apply for job</button>
+                <a href="/contact" class="subs__container-btns-contact">Schedule Demo</a>
                 </div>
             </div>
         </section>

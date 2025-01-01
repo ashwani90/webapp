@@ -15,11 +15,12 @@
 
 
 
-                                     <input autocomplete="off" id="emailSignupId" aria-label="Email" data-validation="email" type="email" maxlength="250" name="emailId" class="form-control email-check position-relative email-signup-input-field msg-tooltip" placeholder="Email" aria-describedby="inputEmailSignUpError"> <span class="email-signup-mail-icon position-absolute" title="Email"><span class="sr-only">Email</span></span>
+                                     <input autocomplete="off" id="email_id" aria-label="Email" data-validation="email" type="email" maxlength="250" name="emailId" class="form-control email-check position-relative email-signup-input-field msg-tooltip" placeholder="Email" aria-describedby="inputEmailSignUpError"> <span class="email-signup-mail-icon position-absolute" title="Email"><span class="sr-only">Email</span></span>
                                 </div>
+                                <span style="margin-top: 20px;" id="responseReg"></span>
                             </div>
                             <div class="col-12 col-xl-4 order-3 order-lg-3 order-xl-1 email-button-wrapper loader-hide-button">
-                                <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Register</button>
+                                <button id="register_btn" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Register</button>
                             </div>
                             <!-- Loader button -->
                             <div class="col-12 col-xl-4 order-3 order-lg-3 order-xl-1 loader-button-wrapper d-none">

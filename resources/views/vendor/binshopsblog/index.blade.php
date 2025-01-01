@@ -4,7 +4,7 @@
 @endsection
 @section('section')
 @include('components.header-image')
-
+@if (count($featured_posts) > 0)
 <section class="service" style="margin-top: 20px;">
 <h3 class="section-head-featured">Featured Stories </h3>
 <div class="container-fluid">
@@ -78,20 +78,8 @@
 </div>
 
         </section>
+@endif
 <section  class="service blog-container-section">
-
-    <h3 class="section-head-featured">Discover More </h3>
-    @if($category_chain)
-    <div class="tag-container">
-        <ul>
-            <li><b>TAGS</b></li>
-            @forelse($category_chain as $cat)
-            <li><a href="{{$cat->categoryTranslations[0]->url($locale)}}"> {{$cat->categoryTranslations[0]['category_name']}}</a></li>
-            @empty @endforelse
-
-        </ul>
-    </div>
-    @endif
 
     <div class="row">
     @foreach($posts as $post)

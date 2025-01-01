@@ -9,7 +9,7 @@
 
             </p>
             <div class="cta-container">
-            <span class="cta">{{$data['button_text']}} <span class="cta-btn btn-circle"><i class="fa fa-arrow-right" aria-hidden="true"></i></span></span>
+            <span class="cta" id="contact_us_cta">{{$data['button_text']}} <span class="cta-btn btn-circle"><i class="fa fa-arrow-right" aria-hidden="true"></i></span></span>
             </div>
         </div>
 

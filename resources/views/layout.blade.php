@@ -5,16 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
         <link rel="stylesheet" href="{{ asset('css/variables.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
         <link rel="stylesheet" href="{{ asset('css/jkinda.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/remo.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/blog.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/fontawesome-project/css/all.min.css') }}" />
         @yield('custom_css')
 
         <title>Jkinda | Delivering Success</title>
@@ -48,14 +50,15 @@
             <div class="row footer__content">
               <div class="col-md-3 footer__details d-flex flex-column justify-content-around">
                 <div class="footer__company">
-                <img alt="" loading="lazy" width="70" height="50" decoding="async" data-nimg="1" src="./img/jkinda_logo.png" style="color: transparent;">
-
+                    <a href="/">
+                <img width="70" height="50" src="/img/jkinda_logo.png" >
+</a>
                 </div>
                 <div class="footer__about">
                   <h2>About Us</h2>
                   <span>We're a dynamic service-oriented organization dedicated to providing AI-based solutions to businesses at a rapid pace</span>
                 </div>
-                <div class="footer__contact">
+                <div class="footer__contact d-flex flex-column">
                   <h2>Contact Us</h2>
                   <span>+91 9719820967</span>
                   <span>jkindaat@gmail.com</span>
@@ -64,36 +67,37 @@
               <div class="col-md-3 footer__details">
                 <div  class="footer__links_about">
                   <h2>Information</h2>
-                  <span>Contact Us</span>
-                  <span>Projects</span>
-                  <span>Services</span>
-                  <span>Blogs</span>
+                  <a href="/contact">Contact Us</a>
+                  <a href="/products">Projects</a>
+                  <a href="/services">Services</a>
+                  <a href="/blogs">Blogs</a>
                 </div>
               </div>
               <div class="col-md-2 footer__details">
                 <div  class="footer__links_help">
                   <h2>Helpful Links</h2>
-                  <span>Services</span>
-                  <span>Products</span>
-                  <span>Chatbot</span>
-                  <span>OCR</span>
+                  <a href="/services">Services</a>
+                  <a href="/products">Products</a>
+                  <a href="/product/custom-chatbot">Chatbot</a>
+                  <a href="/product/ocr-solution">OCR</a>
                 </div>
               </div>
               <div class="col-md-4 footer__details">
                 <div  class="footer__links_subs">
                 <h2>Subscribe for more info</h2>
-                <input type="email" class="footer__email__input" />
-                <button class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Subscribe</button>
+                <input type="email" class="footer__email__input" id="subscribe_email" />
+                <button id="subs_button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Subscribe</button>
+                <span style="margin-top: 15px;margin-left:15px;" id="response"></span>
                </div>
               </div>
               <span class="footer__bottom-line"></span>
               <div class="footer__bottom">
                 <div></div>
                 <div class="footer__bottom__icons">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <span class="center"><img height="15px" width="15px" src="/img/icons/facebook.svg" /></span>
+                  <span class="cta-btn btn-circle"><img height="15px" width="15px" src="/img/icons/instagram.svg" /></span>
+                  <span><img  height="15px" width="15px" src="/img/icons/twitter.svg" /></span>
+                  <span><img height="15px" width="15px" src="/img/icons/linkedin.svg" /></span>
                 </div>
                 <span class="footer__bottom__copyright">Copyright @ Jkinda All right reserved</span>
               </div>
@@ -102,9 +106,11 @@
           <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="{{ asset('js/carousel.js') }}">
-          </script>
-          <script>
+          <script src="{{ asset('js/custom.js') }}"></script>
+
+          <!-- <script src="{{ asset('js/carousel.js') }}"> -->
+          <!-- </script> -->
+          <!-- <script>
             $( document ).ready(function() {
               $("#header-carousel").hover(function(){$(".btn-carousel").show();},function(){$(".btn-carousel").hide();})
               // $(".btn-carousel").on('click',function(){
@@ -130,7 +136,7 @@
                 nav.addClass("active");
                   }, 4000);
             });
-          </script>
+          </script> -->
           @yield('custom_js')
     </body>
 </html>

@@ -142,8 +142,7 @@
             <div class="subs__container">
                 <h1>What can we help you with</h1>
                 <div class="subs__container-btns">
-                    <button class="subs__container-btns-contact">Work with us</button>
-                    <button class="subs__container-btns-job">Apply for job</button>
+                    <a href="/contact" class="subs__container-btns-contact">Schedule Demo</a>
                 </div>
             </div>
         </section>

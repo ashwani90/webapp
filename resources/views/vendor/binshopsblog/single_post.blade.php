@@ -20,9 +20,8 @@
                         <div class="row">
                             <div class="col-12 blog-details-text last-paragraph-no-margin margin-6-rem-bottom">
                                 <ul class="list-unstyled margin-2-rem-bottom">
-                                    <li class="d-inline-block align-middle margin-25px-right"><i class="feather icon-feather-calendar text-fast-blue margin-10px-right"></i><a href="blog-grid.html">{{$post->post->posted_at->diffForHumans()}}</a></li>
-                                    <li class="d-inline-block align-middle margin-25px-right"><i class="feather icon-feather-folder text-fast-blue margin-10px-right"></i><a href="blog-grid.html">Creative</a></li>
-                                    <li class="d-inline-block align-middle"><i class="feather icon-feather-user text-fast-blue margin-10px-right"></i>By <a href="blog-grid.html">{{$post->post->author->name}}</a></li>
+                                    <li class="d-inline-block align-middle margin-25px-right"><i class="feather icon-feather-calendar text-fast-blue margin-10px-right"></i><a>{{$post->post->posted_at->diffForHumans()}}</a></li>
+                                    <li class="d-inline-block align-middle"><i class="feather icon-feather-user text-fast-blue margin-10px-right"></i>By <a>{{$post->post->author->name}}</a></li>
                                 </ul>
                                 <h5 class="alt-font font-weight-500 text-extra-dark-gray margin-4-half-rem-bottom">{{$post->title}}</h5>
                                 <!-- start vimeo video -->
@@ -39,13 +38,13 @@
                                 <div class="col-12 col-md-9 text-center text-md-start sm-margin-10px-bottom px-0">
                                     <div class="tag-cloud">
                                     @foreach($categories as $category)
-                                        <a href="blog-grid.html">{{$category->categoryTranslations[0]->category_name}}</a>
+                                        <a href="/en/blog/?category={{$category->categoryTranslations[0]->category_name}}">{{$category->categoryTranslations[0]->category_name}}</a>
                                         @endforeach
 
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3 text-center text-md-end px-0">
-                                    <a class="likes-count text-uppercase text-extra-dark-gray font-weight-500" href="#"><i class="far fa-heart"></i><span>05 Likes</span></a>
+                                    <a class="likes-count text-uppercase text-extra-dark-gray font-weight-500"><i class="far fa-heart"></i><span>{{count($comments)}} comments</span></a>
                                 </div>
                             </div>
                             <!-- <div class="col-12 mx-auto margin-50px-bottom md-margin-30px-bottom wow animate__fadeIn">
@@ -74,7 +73,7 @@
                     </div>
                     <!-- start sidebar -->
                     <aside class="col-12 col-xl-3 offset-xl-1 col-lg-4 col-md-7 blog-sidebar lg-padding-4-rem-left md-padding-15px-left">
-                        <div class="d-inline-block w-100 margin-5-rem-bottom">
+                        <!-- <div class="d-inline-block w-100 margin-5-rem-bottom">
                             <span class="alt-font font-weight-500 text-large text-extra-dark-gray d-block margin-25px-bottom">Search posts</span>
                             <form id="search-form" role="search" method="get" action="search-result.html">
                                 <div class="position-relative">
@@ -82,7 +81,7 @@
                                     <button type="submit" class="bg-transparent btn text-fast-blue position-absolute right-5px top-8px text-medium md-top-8px sm-top-10px search-button"><i class="feather icon-feather-search ms-0"></i></button>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                         <!-- <div class="text-extra-dark-gray border-all border-color-medium-gray border-radius-4px padding-40px-all text-center margin-5-rem-bottom xs-margin-35px-bottom">
                             <a href="about-me.html"><img src="https://via.placeholder.com/125x125" alt="" class="rounded-circle margin-5px-bottom w-100px d-block mx-auto"/></a>
                             <a href="blog-grid.html" class="text-extra-dark-gray alt-font font-weight-500 margin-20px-top d-inline-block text-medium">Colene Landin</a>
@@ -101,7 +100,7 @@
                             <span class="alt-font font-weight-500 text-large text-extra-dark-gray d-block margin-35px-bottom">Categories</span>
                             <ul class="list-style-07 list-unstyled">
                             @foreach($categories as $category)
-                                <li><a href="blog-grid.html">{{$category->categoryTranslations[0]->category_name}}</a><span class="item-qty"></span></li>
+                                <li><a href="/en/blog/?category={{$category->categoryTranslations[0]->category_name}}">{{$category->categoryTranslations[0]->category_name}}</a><span class="item-qty"></span></li>
                             @endforeach
 
                             </ul>
@@ -126,13 +125,9 @@
                             <span class="alt-font font-weight-500 text-large text-extra-dark-gray d-block margin-35px-bottom">Tags cloud</span>
                             <div class="tag-cloud">
                                 <!-- TODO:: All tags listed here maybe -->
-                                <a href="blog-grid.html">Development</a>
-                                <a href="blog-grid.html">Mountains</a>
-                                <a href="blog-grid.html">Lifestyle</a>
-                                <a href="blog-grid.html">Hotel</a>
-                                <a href="blog-grid.html">Event</a>
-                                <a href="blog-grid.html">Multimedia </a>
-                                <a href="blog-grid.html">Fashion</a>
+                                <a href="/en/blog/?category=Python">Python</a>
+                                <a href="/en/blog/?category=Javascript">Javascript</a>
+                                <a href="/en/blog/?category=Pytorch">Pytorch</a>
                             </div>
                         </div>
 
@@ -143,6 +138,7 @@
         </section>
         <!-- end section -->
         <!-- start section -->
+         @if(count($comments))
         <section class="comm">
             <div class="container">
                 <div class="row justify-content-center">
@@ -150,7 +146,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-9 mx-auto wow animate__fadeIn">
-                        <ul class="blog-comment">
+                    <h2 class='text-center mb-4' id='binshopsblogcomments'>Comments</h2>
+                    <ul class="blog-comment">
                         @foreach($comments as $comment)
                             <li>
                                 <div class="d-block d-md-flex w-100 align-items-center align-items-md-start ">
@@ -159,7 +156,6 @@
                                     </div>
                                     <div class="w-100 padding-25px-left last-paragraph-no-margin sm-no-padding-left">
                                         <a href="#" class="text-extra-dark-gray text-fast-blue-hover alt-font font-weight-500 text-medium">{{$comment->author()}}</a>
-                                        <a href="#comments" class="btn-reply text-medium-gray text-uppercase section-link">Reply</a>
                                         <div class="text-medium text-medium-gray margin-15px-bottom">{{$comment->created_at->diffForHumans()}}</div>
                                         <p class="w-85">{!! nl2br(e($comment->comment))!!}</p>
                                     </div>
@@ -172,9 +168,11 @@
                 </div>
             </div>
         </section>
+        @endif
         <!-- end section -->
         <!-- start section -->
         <section id="comments" class="pt-0">
+
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-9 margin-4-rem-bottom wow animate__fadeIn">
@@ -189,11 +187,11 @@
                             <div class="row align-items-center">
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <label class="margin-15px-bottom" for="author-name">Your name <span class="text-radical-red">*</span></label>
-                                    <input id="author-name" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="text" name="author-name" placeholder="Enter your name">
+                                    <input id="author_name" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="text" name="author_name" placeholder="Enter your name">
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <label class="margin-15px-bottom" for="author-email">Your email address <span class="text-radical-red">*</span></label>
-                                    <input id="author-email" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="email" name="author-email" placeholder="Enter your email">
+                                    <input id="author_email" class="medium-input border-radius-4px bg-white margin-30px-bottom required" type="email" name="author_email" placeholder="Enter your email">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="margin-15px-bottom">Your comment</div>

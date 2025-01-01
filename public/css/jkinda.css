@@ -417,11 +417,36 @@ a {
 .carousel-caption div{
     display: flex;
     justify-content: flex-start;
-    
+
 }
 
-.carousel-caption div button{
-    font-size: 1.4rem;
+.carousel-caption div a.btn{
+    background: linear-gradient(102.57deg, var(--bs-primary), var(--bs-primary-alpha) 100%, var(--bs-primary-beta) 0);
+    border-radius: 6.25rem;
+    font-size: 1.125rem;
+    color: var(--bs-white);
+    letter-spacing: .03125rem;
+    padding: 9pt 2pc;
+    font-family: Basis-regular;
+    transition: all .5s;
+}
+
+.carousel-caption .carousel-secondary-head{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.carousel-caption .tcs-primary-btn{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.carousel-caption:hover .carousel-secondary-head{
+    opacity: 1;
+}
+
+.carousel-caption:hover .tcs-primary-btn{
+    opacity: 1;
 }
 
 .carousel-item {
@@ -467,7 +492,7 @@ a {
     text-align: left;
     color: var(--bs-white);
     font-family: Houschka-medium;
-    
+
 }
 
 .carousel-secondary-head {
@@ -479,7 +504,7 @@ a {
     text-align: left;
     font-family: Basis-regular;
     color: var(--bs-highlight);
-   
+
 }
 
 span.carousel-primary-head, span.carousel-secondary-head {
@@ -509,7 +534,7 @@ span.carousel-primary-head, span.carousel-secondary-head {
 }
 
 /* .carousel-item.active {
-    
+
 } */
 
 .product__item__text {
@@ -536,7 +561,7 @@ span.carousel-primary-head, span.carousel-secondary-head {
       height: 0px;
       display: inline-block;
       width: 200px;
-      margin-bottom: 20px; 
+      margin-bottom: 20px;
       font-size: 1.4rem;
       line-height: 2rem;
       letter-spacing: .5px;
@@ -547,7 +572,7 @@ span.carousel-primary-head, span.carousel-secondary-head {
       line-height: 2rem;
       letter-spacing: .5px;
       color: var(--bs-dark);
-      font-family: Basis-regular; 
+      font-family: Basis-regular;
     }
 
 
@@ -562,16 +587,16 @@ span.carousel-primary-head, span.carousel-secondary-head {
         color: var(--bs-dark);
         font-size: 2rem;
     }
-    
+
     .service-text-container-1 h3 {
         font-size: 3rem;
         line-height: 3rem;
         color: var(--bs-primary);
         font-family: Houschka-medium;
         margin-bottom: 1rem;
-        
+
     }
-    
+
     .service-text-container-1 p {
         font-size: 1.4rem;
         line-height: 2rem;
@@ -584,11 +609,11 @@ span.carousel-primary-head, span.carousel-secondary-head {
         padding: 20px;
         /* box-shadow: lightgray 1px 2px; */
         padding: 10px 30px;
-        
+
     }
-    
-    
-    
+
+
+
     .product__desc h1 {
       font-weight: 800;
       margin-top: 20px;
@@ -598,7 +623,7 @@ span.carousel-primary-head, span.carousel-secondary-head {
       font-family: Houschka-medium;
       margin-bottom: 1rem;
     }
-    
+
 .product__desc-s {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -625,7 +650,7 @@ padding: 20px 10px;
     color: var(--bs-dark);
 }
 .product__get__started-btns input:active, .product__get__started-btns input:focus {
-    
+
     background-color:  var(--bs-white);
     color:  var(--bs-primary);
     border: 1px solid var(--bs-primary);
@@ -654,7 +679,7 @@ padding: 20px 10px;
 .service__desc {
 display: flex;
 align-items: center;
-flex-direction: column; 
+flex-direction: column;
 }
 
 
@@ -684,7 +709,7 @@ flex-direction: column;
     margin-left: 60px; }
 .service__work h1 {
     font-weight: 800;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     font-size: 3rem;
     line-height: 3rem;
     color:  var(--bs-primary);
@@ -725,3 +750,14 @@ margin-bottom: 20px; }
     font-family: Basis-regular;
 }
 
+.carousel-indicators button[data-bs-target] {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.carousel-indicators button[data-bs-target].active {
+    background-color: var(--bs-primary);
+}

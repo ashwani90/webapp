@@ -12,7 +12,9 @@ use BinshopsBlog\Models\BinshopsCategory;
 use BinshopsBlog\Models\BinshopsLanguage;
 use BinshopsBlog\Models\BinshopsPost;
 use BinshopsBlog\Models\BinshopsPostTranslation;
-
+use Auth;
+use BinshopsBlog\Models\BinshopsComment;
+use BinshopsBlog\Events\CommentAdded;
 
 class BinshopController extends Controller
 {
@@ -31,6 +33,10 @@ class BinshopController extends Controller
      */
     public function index($locale = null, Request $request, $category_slug = null)
     {
+        $category = $request->input("category");
+        if ($category) {
+            $category_slug = $category;
+        }
         $head_image_title = "Education / Key learnings";
         $head_large = "Articles";
         $subhead_image = "Elevating Insights / Empowering Employees";
@@ -77,6 +83,7 @@ class BinshopController extends Controller
             // You can easily override this in the view files.
             \View::share('binshopsblog_category', $category); // so the view can say "You are viewing $CATEGORYNAME category posts"
             $title = 'Posts in ' . $category->category_name . " category"; // hardcode title here...
+            $featured_posts = [];
         } else {
             $posts = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
                 ->where('lang_id', $request->get("lang_id"))
@@ -84,14 +91,13 @@ class BinshopController extends Controller
                 ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
                 ->orderBy("posted_at", "desc")
                 ->paginate(config("binshopsblog.per_page", 12));
-        }
-
-        $featured_posts = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
+                $featured_posts = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
                 ->where('lang_id', $request->get("lang_id"))
                 ->where("is_published" , '=' , true)
                 ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
                 ->orderBy("seo_title", "desc")
                 ->limit(5)->get();
+        }
 
         //load category hierarchy
         $rootList = BinshopsCategory::roots()->get();
@@ -162,7 +168,7 @@ class BinshopController extends Controller
             // the default scope only selects approved comments, ordered by id
             'comments' => $blog_post->post->comments()
                 ->with("user")
-                ->get(),
+                ->get()->reverse(),
             'captcha' => $captcha,
             'categories' => $categories,
             'locale' => $request->get("locale"),
@@ -170,5 +176,53 @@ class BinshopController extends Controller
             'data' => $data,
             'recent_posts' => $recent_posts,
         ]);
+    }
+
+    public function addNewComment(Request $request, $locale, $blog_post_slug)
+    {
+
+        if (config("binshopsblog.comments.type_of_comments_to_show", "built_in") !== 'built_in') {
+            throw new \RuntimeException("Built in comments are disabled");
+        }
+
+        $post_translation = BinshopsPostTranslation::where("slug", $blog_post_slug)
+            ->with('post')
+            ->firstOrFail();
+        $blog_post = $post_translation->post;
+
+        /** @var CaptchaAbstract $captcha */
+        $captcha = $this->getCaptchaObject();
+        if ($captcha) {
+            $captcha->runCaptchaBeforeAddingComment($request, $blog_post);
+        }
+
+        $new_comment = $this->createNewComment($request, $blog_post);
+        return redirect()->route('binshopsblog.single', ['locale' => $locale, 'blogPostSlug' => $blog_post_slug]);
+    }
+
+    protected function createNewComment(Request $request, $blog_post)
+    {
+        $new_comment = new BinshopsComment($request->all());
+
+        if (config("binshopsblog.comments.save_ip_address")) {
+            $new_comment->ip = $request->ip();
+        }
+        if (config("binshopsblog.comments.ask_for_author_website")) {
+            $new_comment->author_website = $request->get('author_website');
+        }
+        if (config("binshopsblog.comments.ask_for_author_email")) {
+            $new_comment->author_email = $request->get('author_email');
+        }
+        if (config("binshopsblog.comments.save_user_id_if_logged_in", true) && Auth::check()) {
+            $new_comment->user_id = Auth::user()->id;
+        }
+
+        $new_comment->approved = config("binshopsblog.comments.auto_approve_comments", true) ? true : false;
+
+        $blog_post->comments()->save($new_comment);
+
+        event(new CommentAdded($blog_post, $new_comment));
+
+        return $new_comment;
     }
 }

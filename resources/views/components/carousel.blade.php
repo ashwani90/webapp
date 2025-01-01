@@ -14,7 +14,7 @@
         <span class="carousel-primary-head">Empower Your Evolution</span>
         <span class="carousel-secondary-head">Unlock the potential of AI to propel your evolution forward</span>
         <div>
-        <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
+        <a href="/service/ai-development" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</a>
         </div>
       </div>
       <img src="{{ asset('img/images/ai_generated0.jpg') }}" class="d-block w-100" alt="...">
@@ -24,7 +24,7 @@
     <span class="carousel-primary-head">Elevate Your Experience</span>
     <span class="carousel-secondary-head">Enhance efficiency and elevate performance with our customized software solutions</span>
     <div>
-        <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
+        <a href="/service/software-upgrade" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</a>
         </div>
       </div>
       <img src="{{ asset('img/images/aigenerated1.jpeg') }}" class="d-block w-100" alt="...">
@@ -34,7 +34,7 @@
     <span class="carousel-primary-head">Maximize Efficiency</span>
     <span class="carousel-secondary-head">Unlock peak productivity with our solutions designed to maximize efficiency and optimize performance</span>
     <div>
-        <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
+        <a href="/service/devops" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</a>
         </div>
       </div>
       <img src="{{ asset('img/images/ai_generated2.jpg') }}" class="d-block w-100" alt="...">
@@ -44,7 +44,7 @@
     <span class="carousel-primary-head">Tailored Solutions</span>
     <span class="carousel-secondary-head">Discover bespoke software solutions meticulously designed to elevate your business outcomes</span>
     <div>
-        <button type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</button>
+        <a href="/service/custom-software" type="button" class="btn btn-responsive tcs-primary-btn d-inline-block tcs-section-click">Explore</a>
         </div>
       </div>
       <img src="{{ asset('img/images/ai_generated.jpg') }}" class="d-block w-100" alt="...">
