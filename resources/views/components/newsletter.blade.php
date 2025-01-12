@@ -12,9 +12,6 @@
                         <div class="row loader-outer">
                             <div class="col-12 col-xl-8">
                                 <div class="form-element form-element-error">
-
-
-
                                      <input autocomplete="off" id="email_id" aria-label="Email" data-validation="email" type="email" maxlength="250" name="emailId" class="form-control email-check position-relative email-signup-input-field msg-tooltip" placeholder="Email" aria-describedby="inputEmailSignUpError"> <span class="email-signup-mail-icon position-absolute" title="Email"><span class="sr-only">Email</span></span>
                                 </div>
                                 <span style="margin-top: 20px;" id="responseReg"></span>

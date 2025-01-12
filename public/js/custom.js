@@ -6,7 +6,7 @@ $(document).ready(function () {
         interval: 2000,
         touch: false
     })
-    // setInterval(function () {carousel.next()}, 3000);
+    setInterval(function () {carousel.next()}, 3000);
     $("#subs_button").on('click', function() {
         let emailVal = $('#subscribe_email').val()
         if (emailVal.length > 0) {
