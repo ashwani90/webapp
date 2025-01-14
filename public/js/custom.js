@@ -6,7 +6,10 @@ $(document).ready(function () {
         interval: 2000,
         touch: false
     })
+    // after 5 sec move to next item
+    // TODO:: Add progress bar like border to bottom of carousel
     setInterval(function () {carousel.next()}, 3000);
+
     $("#subs_button").on('click', function() {
         let emailVal = $('#subscribe_email').val()
         if (emailVal.length > 0) {
