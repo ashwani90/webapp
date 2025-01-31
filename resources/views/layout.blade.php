@@ -24,6 +24,14 @@
     <body>
 
         <div class="navigation">
+        <img src="/img/jkinda_logo.png" class="nav-logo" style="
+    position: fixed;
+    z-index: 100;
+    top: 40px;
+    left: 40px;
+    height: 60px;
+    width: 80px;
+">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
             <label for="navi-toggle" class="navigation__button">
